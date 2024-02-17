@@ -1,4 +1,4 @@
-/***
+/*** 
 =====================================================
 	Main Slider style
 =====================================================
@@ -41,7 +41,7 @@
     -ms-transform: scale(1);
     transform: scale(1);
     background-color: var(--thm-bg);
-    /*background-blend-mode: luminosity;*/
+    background-blend-mode: luminosity;
     transition: transform 7000ms ease, opacity 1500ms ease-in;
     z-index: 1;
 }
@@ -397,7 +397,7 @@
 
 
 
-/***
+/*** 
 =====================================================
 	Main Slider style2 Css
 =====================================================
