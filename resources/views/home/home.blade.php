@@ -602,26 +602,26 @@
                                 <div class="border-box"></div>
                                 <h3>What’s Happening</h3>
                             </div>
-                            <h2>Looking for Top<br> Consultants</h2>
+                            <h2>Looking for Top<br> Investment Firm?</h2>
                         </div>
                         <div class="inner-content">
                             <ul>
                                 <li>
                                     <span class="icon-right-arrow"></span>
-                                    Nsectetur cing elit.
+                                    Registered Company
                                 </li>
                                 <li>
                                     <span class="icon-right-arrow"></span>
-                                    Suspe ndisse suscipit sagittis leo.
+                                    Over 7 Years of operation
                                 </li>
                                 <li>
                                     <span class="icon-right-arrow"></span>
-                                    Entum estibulum dignissim posuere.
+                                    Over $40M+ returned
                                 </li>
                             </ul>
                             <div class="btn-box">
-                                <a class="btn-one" href="about">
-                                    <span class="txt">Discover More</span>
+                                <a class="btn-one" href="{{route('register')}}">
+                                    <span class="txt">Get Started</span>
                                 </a>
                             </div>
                         </div>
@@ -637,12 +637,11 @@
                                         <span class="icon-help"></span>
                                     </div>
                                     <div class="title">
-                                        <h3>We’re Serving<br> 30 Years</h3>
+                                        <h3>We’ve been Serving<br> 7+ Years</h3>
                                     </div>
                                 </div>
                                 <div class="inner-text">
-                                    <p>Lorem ipsum dolor sit a consetetur simple is pscing elitr m nonmy simply free
-                                        text.</p>
+                                    <p>Built on a redefined purpose for growth</p>
                                 </div>
                             </li>
                             <li>
@@ -651,12 +650,13 @@
                                         <span class="icon-customer-review"></span>
                                     </div>
                                     <div class="title">
-                                        <h3>The Largest<br> Consulting Firm</h3>
+                                        <h3>The First AI-integrated<br> Investment Firm</h3>
                                     </div>
                                 </div>
                                 <div class="inner-text">
-                                    <p>Lorem ipsum dolor sit a consetetur simple is pscing elitr m nonmy simply free
-                                        text.</p>
+                                    <p>
+                                        Top firms for investments come to us to aid and support them
+                                    </p>
                                 </div>
                             </li>
                         </ul>
