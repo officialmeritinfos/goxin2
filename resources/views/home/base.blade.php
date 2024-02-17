@@ -48,10 +48,6 @@
     <link href="{{asset('home/css/color/theme-color.css')}}" id="jssDefault" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('home/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('home/css/responsive.css')}}">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('home/images/favicon/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" href="{{asset('home/images/favicon/favicon-32x32.png')}}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{asset('home/images/favicon/favicon-16x16.png')}}" sizes="16x16">
 
     <meta name="og:title" content="{{$siteName}}"/>
     <meta name="og:type" content="company"/>
