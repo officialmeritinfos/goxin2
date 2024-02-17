@@ -10,7 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('home/fonts/sayinistic-fonts/stylesheet.css')}}" />
+
+
+
     <link rel="stylesheet" href="{{asset('home/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('home/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('home/css/bootstrap.min.css')}}">
@@ -46,12 +48,17 @@
     <link href="{{asset('home/css/color/theme-color.css')}}" id="jssDefault" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('home/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('home/css/responsive.css')}}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('home/images/favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('home/images/favicon/favicon-32x32.png')}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{asset('home/images/favicon/favicon-16x16.png')}}" sizes="16x16">
+
     <meta name="og:title" content="{{$siteName}}"/>
     <meta name="og:type" content="company"/>
     <meta name="og:url" content="/"/>
     <meta name="og:image" content="{{asset('home/images/'.$web->logo)}}"/>
     <meta name="og:site_name" content="{{$siteName}}"/>
-    <meta name="og:description" content="THE LEADING AGRO, REAL ESTATE, GOLD MINING and STOCK MARKET project company"/>
+    <meta name="og:description" content="THE LEADING AI INVESTMENT, REAL ESTATE, GOLD MINING and STOCK MARKET project company"/>
     <meta name="description" content="{{$web->description}}">
     <meta name="keywords" content="business, marketing, agency">
     <title> {{$siteName}} | {{$pageName}}</title>
@@ -60,7 +67,7 @@
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js')}}"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="{{asset('home/js/html5shiv.js')}}"></script>
     <![endif]-->
     @stack('css')
@@ -68,8 +75,8 @@
 
 
 <body>
-
 @inject('injected','App\Defaults\Custom')
+
 <div class="boxed_wrapper ltr">
 
     <!-- preloader -->
@@ -88,6 +95,7 @@
                                 {{$letter}}
                             </span>
                         @endforeach
+
                     </div>
                 </div>
             </div>
@@ -96,23 +104,52 @@
     <!-- preloader end -->
 
     <!-- Main header-->
-    <header class="main-header header-style-one">
+    <header class="main-header header-style-two">
+
+        <div class="header-style2__top">
+            <div class="container">
+                <div class="outer-box">
+                    <div class="header-style2__top-left">
+                        <div class="header-contact-info">
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-email"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="mailto:{{$web->email}}">{{$web->email}}</a></h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-placeholder"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h6>{!! $web->address !!}</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <!--Start Header-->
-        <div class="header">
-            <div class="auto-container">
+        <div class="header-style2">
+            <div class="container">
                 <div class="outer-box">
-
                     <!--Start Header Left-->
-                    <div class="header-left">
-                        <div class="main-logo-box">
+                    <div class="header-style2__left">
+                        <div class="logo-box-style2">
                             <a href="{{url('/')}}">
-                                <img src="{{asset('home/images/'.$web->logo)}}" alt="Awesome Logo" title="" style="width: 150px;">
+                                <img src="{{asset('home/images/'.$web->logo)}}" alt="Awesome Logo" title=""
+                                style="width: 150px;">
                             </a>
                         </div>
 
-
-                        <div class="nav-outer style1 clearfix">
+                        <div class="nav-outer style2 clearfix">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">
                                 <div class="inner">
@@ -122,7 +159,7 @@
                                 </div>
                             </div>
                             <!-- Main Menu -->
-                            <nav class="main-menu style1 navbar-expand-md navbar-light">
+                            <nav class="main-menu style2 navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
                                         <li>
@@ -151,7 +188,7 @@
                                                 <li><a href="{{url('privacy')}}">Privacy policy</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="#"><span>Account</span></a>
+                                        <li class="dropdown"><a href="#"><span>Investor Space</span></a>
                                             <ul>
                                                 <li><a href="{{route('register')}}">Register</a></li>
                                                 <li><a href="{{route('login')}}">Login</a></li>
@@ -164,24 +201,24 @@
                             <!-- Main Menu End-->
                         </div>
 
-
                     </div>
                     <!--End Header Left-->
 
-                    <!--Start Header Right-->
-                    <div class="header-right">
-                        @if(!empty($web->phone))
-                            <div class="phone-number-box1">
+                    @if(!empty($web->phone))
+                        <!--Start Header Right-->
+                        <div class="header-style2__right">
+                            <div class="phone-number-box1 phone-number-box1--style2">
                                 <div class="icon">
                                     <span class="icon-phone-call"></span>
                                 </div>
                                 <div class="phone">
+                                    <p>Call Anytime</p>
                                     <a href="tel:{{$web->phone}}">{{$web->phone}}</a>
                                 </div>
                             </div>
-                        @endif
-                    </div>
-                    <!--End Header Right-->
+                        </div>
+                        <!--End Header Right-->
+                    @endif
 
                 </div>
             </div>
@@ -195,7 +232,7 @@
                     <!--Logo-->
                     <div class="logo float-left">
                         <a href="{{url('/')}}" class="img-responsive">
-                            <img src="{{asset('home/images/'.$web->logo)}}" alt="" title="" style="width: 100px;">
+                            <img src="{{asset('home/images/'.$web->logo)}}" alt="" title="">
                         </a>
                     </div>
                     <!--Right Col-->
@@ -217,26 +254,28 @@
             <nav class="menu-box">
                 <div class="nav-logo"><a href="{{url('/')}}">
                         <img src="{{asset('home/images/'.$web->logo)}}"
-                                                                alt="" title="" style="width: 100px;"></a></div>
+                                                                alt="" title=""></a></div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-{{--                <!--Social Links-->--}}
-{{--                <div class="social-links">--}}
-{{--                    <ul class="clearfix">--}}
-{{--                        <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>--}}
-{{--                        <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>--}}
-{{--                        <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>--}}
-{{--                        <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>--}}
-{{--                        <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
+                <!--Social Links-->
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
+                        <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <!-- End Mobile Menu -->
     </header>
 
-        @yield('content')
+
+    @yield('content')
+
     <!--Start Slogan Style2 Area-->
     <section class="slogan-style2-area">
         <div class="container">
@@ -345,7 +384,7 @@
                             </a>
                         </div>
                         <div class="copyright">
-                            <p>Copyright &copy; 2010 - {{date('Y')}} <a href="{{url('/')}}">{{$siteName}}</a> All Rights Reserved.</p>
+                            <p>Copyright &copy; 2015 - {{date('Y')}} <a href="{{url('/')}}">{{$siteName}}</a> All Rights Reserved.</p>
                         </div>
 
                     </div>
@@ -363,8 +402,6 @@
 
 
 </div>
-
-
 
 <script src="{{asset('home/js/jquery.js')}}"></script>
 <script src="{{asset('home/js/aos.js')}}"></script>
@@ -390,8 +427,10 @@
 <script src="{{asset('home/js/TweenMax.min.js')}}"></script>
 <script src="{{asset('home/js/validation.js')}}"></script>
 <script src="{{asset('home/js/wow.js')}}"></script>
+
 <script src="{{asset('home/js/jquery-1color-switcher.min.js')}}"></script>
 <script src="{{asset('home/js/parallax.min.js')}}"></script>
+
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&amp;callback=initMap">
 </script>

@@ -1,24 +1,19 @@
 @extends('home.base')
 @section('content')
-
-
     <!-- Start Main Slider -->
-    <section class="main-slider style1">
+    <section class="main-slider style2">
         <div class="slider-box">
             <!-- Banner Carousel -->
             <div class="banner-carousel owl-theme owl-carousel">
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/agro5.jpg')}})">
+                    <div class="image-layer" style="background-image:url({{asset('home/images/ai2.jpg')}})">
                     </div>
-                    <div class="shape-box"></div>
                     <div class="auto-container">
-                        <div class="content">
+                        <div class="content text-center">
                             <div class="big-title">
                                 <h2>
-                                    Sow, Grow<span class="dotted"></span><br>
-                                    Harvest<span class="dotted"></span><br>
-                                    Prosperity<span class="dotted"></span>
+                                    AI- Integrated<br> Investment
                                 </h2>
                             </div>
                             <div class="btns-box">
@@ -33,16 +28,13 @@
                 </div>
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/realsave.jpg')}})">
+                    <div class="image-layer" style="background-image:url({{asset('home/images/biotech.jpg')}})">
                     </div>
-                    <div class="shape-box"></div>
                     <div class="auto-container">
-                        <div class="content">
+                        <div class="content text-center">
                             <div class="big-title">
                                 <h2>
-                                    Unlocking Opportunities<span class="dotted"></span><br>
-                                    In<span class="dotted"></span><br>
-                                    Real Estate<span class="dotted"></span>
+                                    Invest in Biotechnology<br> with a Notable firm
                                 </h2>
                             </div>
                             <div class="btns-box">
@@ -55,42 +47,16 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/gold.jpg')}})">
+                    <div class="image-layer" style="background-image:url({{asset('home/serv/2.png')}})">
                     </div>
-                    <div class="shape-box"></div>
                     <div class="auto-container">
-                        <div class="content">
+                        <div class="content text-center">
                             <div class="big-title">
                                 <h2>
-                                    Shine in  <span class="dotted"></span><br>
-                                    Precious<span class="dotted"></span><br>
-                                    Investments<span class="dotted"></span>
-                                </h2>
-                            </div>
-                            <div class="btns-box">
-                                <a class="btn-one" href="{{route('register')}}">
-                                        <span class="txt">
-                                            Get Started<i class="icon-refresh arrow"></i>
-                                        </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide -->
-                <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/stock4.jpg')}})">
-                    </div>
-                    <div class="shape-box"></div>
-                    <div class="auto-container">
-                        <div class="content">
-                            <div class="big-title">
-                                <h2>
-                                    Unleashing  <span class="dotted"></span><br>
-                                    the Power<span class="dotted"></span><br>
-                                    of Technology in Stock<span class="dotted"></span>
+                                    Medical Cannabis Investment<br> Services
                                 </h2>
                             </div>
                             <div class="btns-box">
@@ -108,7 +74,8 @@
         </div>
     </section>
     <!-- End Main Slider -->
-
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,1958,1831,74,2,5426" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
+    <!-- /.End of tricker -->
     <!--Start Service Style1 Area-->
     <section class="service-style1-area">
         <div class="container">
@@ -176,34 +143,31 @@
     </section>
     <!--End Service Style1 Area-->
 
-    <!--Start About Style1 Area-->
-    <section class="about-style1-area">
+    <!--Start About Style2 Area-->
+    <section class="about-style2-area">
         <div class="container">
-            <div class="sec-title text-center">
-                <div class="sub-title">
-                    <div class="border-box"></div>
-                    <h3>About Us</h3>
-                </div>
-                <h2>We’re Providing the<br> Best Solution by Experts</h2>
-            </div>
-            <div class="row text-right-rtl">
+            <div class="row">
 
                 <div class="col-xl-6">
-                    <div class="about-style1__image clearfix">
-                        <div class="shape-1"></div>
-                        <div class="shape-2"></div>
-                        <div class="inner">
-                            <img src="{{asset('home/images/about/about-style1__image-1.jpg')}}" alt="">
+                    <div class="about-style2__content">
+                        <div class="sec-title sec-title--style2">
+                            <div class="sub-title">
+                                <div class="border-box"></div>
+                                <h3>About the company</h3>
+                            </div>
+                            <h2>We’re Providing the<br> Best Solution with AI & Experts</h2>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-6">
-                    <div class="about-style1__content">
                         <div class="inner-content">
-
                             <div class="top-text">
-                                <h3>Your Gateway to financial freedom</h3>
+                                <div class="icon">
+                                    <span class="icon-recruit"></span>
+                                </div>
+                                <div class="inner-title">
+                                    <h3>Grow your wealth with reputable and proof-based strategies.</h3>
+                                </div>
+                            </div>
+
+                            <div class="text-box">
                                 <p>
                                     Welcome to {{$siteName}}, your all-in-one destination for navigating the world of investments.
                                     Specializing in Agriculture, stocks,
@@ -212,66 +176,56 @@
                                 </p>
                             </div>
 
-                            <ul>
-                                <li>
-                                    <span class="icon-check"></span>
-                                    Automated Returns
-                                </li>
-                                <li>
-                                    <span class="icon-check"></span>
-                                    Audited by experts
-                                </li>
-                                <li>
-                                    <span class="icon-check"></span>
-                                    Agriculture and Real Estate dominated
-                                </li>
-                                <li>
-                                    <span class="icon-check"></span>
-                                    AI-driven strategies
-                                </li>
-                            </ul>
-
                             <div class="row">
                                 <div class="col-xl-6">
-                                    <div class="progress-block">
-                                        <div class="inner-box">
-                                            <div class="graph-outer">
-                                                <input type="text" class="dial" data-fgColor="#20bad1"
-                                                       data-bgColor="#eff7f8" data-width="100" data-height="100"
-                                                       data-linecap="normal" value="90">
-                                                <div class="inner-text count-box">
-                                                        <span class="count-text" data-stop="90"
-                                                              data-speed="2000"></span>%
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="outer-text">
-                                            <h3>Clients<br> Satisfied</h3>
-                                        </div>
-                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="icon-check"></span>
+                                            Automated Returns
+                                        </li>
+                                        <li>
+                                            <span class="icon-check"></span>
+                                            Audited by experts
+                                        </li>
+                                    </ul>
                                 </div>
-
                                 <div class="col-xl-6">
-                                    <div class="progress-block">
-                                        <div class="inner-box">
-                                            <div class="graph-outer">
-                                                <input type="text" class="dial" data-fgColor="#20bad1"
-                                                       data-bgColor="#eff7f8" data-width="100" data-height="100"
-                                                       data-linecap="normal" value="50">
-                                                <div class="inner-text count-box">
-                                                        <span class="count-text" data-stop="50"
-                                                              data-speed="2000"></span>M+
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="outer-text">
-                                            <h3>Payouts<br> Made</h3>
-                                        </div>
-                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="icon-check"></span>
+                                            Agriculture and Real Estate dominated
+                                        </li>
+                                        <li>
+                                            <span class="icon-check"></span>
+                                            AI-driven strategies
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
+                            <div class="btn-box">
+                                <a class="btn-one" href="{{url('about')}}">
+                                    <span class="txt">Discover More</span>
+                                </a>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="about-style2__image clearfix">
+                        <div class="shape-1"></div>
+                        <div class="shape-2"></div>
+                        <div class="border-box float-bob-y"></div>
+                        <div class="inner">
+                            <img src="{{asset('home/images/about/about-style2__image-1.jpg')}}" alt="">
+                            <div class="overlay-content">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="48">0</span>M+
+                                </div>
+                                <h3>Investment Completed</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,22 +233,7 @@
             </div>
         </div>
     </section>
-    <!--End About Style1 Area-->
-
-    <!--Start Slogan Style3 Area-->
-    <section class="slogan-style3-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="slogan-style3__content" data-aos="slide-up" data-aos-easing="linear"
-                         data-aos-duration="500">
-                        <h3> Your path to prosperity begins here, where we navigate the markets of today and tomorrow, turning opportunities into triumphs.</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Slogan Style3 Area-->
+    <!--End About Style2 Area-->
 
     <!--Start working process Area-->
     <section class="working-process-area">
@@ -402,144 +341,114 @@
     <!--End working process Area-->
 
 
-    <!--Start Case Stories Area-->
-    <section class="case-stories-area">
+    <!--Start Service Style2 Area-->
+    <section class="service-style2-area">
+        <div class="service-style2--primary-bg"></div>
         <div class="container">
             <div class="sec-title text-center">
                 <div class="sub-title">
                     <div class="border-box"></div>
-                    <h3>our recent work</h3>
+                    <h3>Our Services</h3>
                 </div>
-                <h2>Our Projects</h2>
+                <h2>What We’re Offering</h2>
             </div>
-            <div class="row">
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/ricefarm.jpg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Growing Food <br>Sufficiency <br> through Rice</h2>
-                                <div class="line"></div>
+            <div class="row text-right-rtl justify-content-center">
+                @foreach($services as $service)
+                    <!--Start Single Service Style2-->
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="single-service-style2">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="{{asset('home/serv/'.$service->photo)}}" alt="">
+                                </div>
+                                <div class="icon">
+                                    <span class="icon-creative"></span>
+                                </div>
+                            </div>
+                            <div class="title-holder">
+                                <h3><a href="{{route('service.details',['id'=>$service->id])}}">{{$service->title}}</a></h3>
+                                <div class="text">
+                                    <p>
+                                        {{$service->short}}
+                                    </p>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="{{route('service.details',['id'=>$service->id])}}"><span class="icon-right-arrow"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--End Case Stories Single-->
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/realestate.jpg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Antique <br>Realtor <br> New York</h2>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Case Stories Single-->
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/realestatedc.jpg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Realtor <br>Service <br> Washington DC</h2>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Case Stories Single-->
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/yam.jpeg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Mechanized <br>Yam <br> production</h2>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Case Stories Single-->
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/goldmining.jpg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Gold <br>Mining
-                                    <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Case Stories Single-->
-                <!--Start Case Stories Single-->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="case-stories__single">
-                        <div class="img-box">
-                            <img src="{{asset('home/images/stocktrade.jpg')}}" alt="">
-                        </div>
-                        <div class="content-box">
-                            <div class="top-text">
-                                <h2>Stock <br>Trading
-                                    <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Case Stories Single-->
-
-
+                    <!--End Single Service Style2-->
+                @endforeach
             </div>
         </div>
     </section>
-    <!--End Case Stories Area-->
+    <!--End Service Style2 Area-->
 
-    <!--Start slogan area-->
-    <section class="slogan-area">
-        <div class="slogan-area__bg"
-             style="background-image: url({{asset('home/images/parallax-background/slogan-area-bg.jpg')}});"></div>
-        <div class="shape wow slideInRight" data-wow-delay="1400ms" data-wow-duration="5500ms"
-             style="background-image: url({{asset('home/images/shape/shape-1.png')}});">
-        </div>
+    <!--Start Choose Area-->
+    <section class="choose-area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="slogan-text-box">
-                        <h2 class="paroller">REFERRAL <span
-                                style="background-image: url({{asset('home/images/shape/zig-zag.png')}});"><br/></span><br></h2>
-                        <p class="text-white" style="margin-top: 4rem;">
-                            In {{$siteName}} it is much more profitable to invest together. Why? Because by inviting friends via your
-                            referral link 5% commission on every new level of the investor who registered directly from your referral link.
-                            The affiliate program has 1 level of commission. Meaning you can only earn from your direct referrals.
-                        </p>
-                        <div class="slogan-btn-box">
-                            <a class="btn-one" href="{{route('register')}}">
-                                <span class="txt">Get Started</span>
-                            </a>
+                <div class="col-xl-6">
+                    <div class="choose-img-box">
+                        <div class="border-box float-bob-y"></div>
+                        <div class="inner">
+                            <img src="{{asset('home/images/ai.jpg')}}" alt="">
                         </div>
-
                     </div>
                 </div>
+
+                <div class="col-xl-6">
+                    <div class="choose-content-box">
+                        <div class="sec-title sec-title--style2">
+                            <div class="sub-title">
+                                <div class="border-box"></div>
+                                <h3>get benefits</h3>
+                            </div>
+                            <h2>Why Choose Our<br> Firm</h2>
+                        </div>
+                        <div class="inner-content">
+                            <div class="top-text">
+                                <p>Although there may be others who claim to be like us, we remain unique for these reasons</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-right-arrow"></span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>Investment Analytics</h3>
+                                            <p>
+                                                Track your investments with our real analytics that gives you feedback on
+                                                what you have invested so far.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-right-arrow"></span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>Automated System</h3>
+                                            <p>
+                                                From the deposit to the investment and returns, everything has been automated
+                                                to give you the peace of mind that you have always desired.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <!--End slogan area-->
+    <!--End Choose Area-->
 
     <!--Start Testimonial Style1 Area-->
     <section class="testimonial-style1-area">
@@ -676,30 +585,203 @@
     </section>
     <!--End Testimonial Style1 Area-->
 
+
+    <!--Start Features Style1 Area-->
+    <section class="features-style1-area">
+        <div class="features-style1-img-box">
+            <div class="features-style1-img-bg"
+                 style="background-image: url({{asset('home/images/resources/features-style1-img-bg.jpg')}});">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="features-style1__content">
+                        <div class="sec-title sec-title--style2">
+                            <div class="sub-title">
+                                <div class="border-box"></div>
+                                <h3>What’s Happening</h3>
+                            </div>
+                            <h2>Looking for Top<br> Consultants</h2>
+                        </div>
+                        <div class="inner-content">
+                            <ul>
+                                <li>
+                                    <span class="icon-right-arrow"></span>
+                                    Nsectetur cing elit.
+                                </li>
+                                <li>
+                                    <span class="icon-right-arrow"></span>
+                                    Suspe ndisse suscipit sagittis leo.
+                                </li>
+                                <li>
+                                    <span class="icon-right-arrow"></span>
+                                    Entum estibulum dignissim posuere.
+                                </li>
+                            </ul>
+                            <div class="btn-box">
+                                <a class="btn-one" href="about">
+                                    <span class="txt">Discover More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="features-style1__items">
+                        <ul>
+                            <li>
+                                <div class="top">
+                                    <div class="icon">
+                                        <span class="icon-help"></span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>We’re Serving<br> 30 Years</h3>
+                                    </div>
+                                </div>
+                                <div class="inner-text">
+                                    <p>Lorem ipsum dolor sit a consetetur simple is pscing elitr m nonmy simply free
+                                        text.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <div class="icon">
+                                        <span class="icon-customer-review"></span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>The Largest<br> Consulting Firm</h3>
+                                    </div>
+                                </div>
+                                <div class="inner-text">
+                                    <p>Lorem ipsum dolor sit a consetetur simple is pscing elitr m nonmy simply free
+                                        text.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Features Style1 Area-->
+
+
+
+    <!--Start Features Style2 Area-->
+    <section class="features-style2-area">
+        <div class="features-style2-area__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="features-style2__content">
+                        <div class="features-style2__content-bg"
+                             style="background-image: url({{asset('home/images/resources/features-style2__content-bg.jpg')}});">
+                        </div>
+                        <div class="shape-1"></div>
+                        <div class="shape-2"></div>
+                        <div class="top-title">
+                            <h2>We Shape the Perfect<br> Solution for Your Finance</h2>
+                        </div>
+                        <div class="features-style2__content-inner">
+                            <div class="row">
+
+                                <!--Start Features Style2 Single Box-->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="features-style2-single-box">
+                                        <span class="icon-conversation-1"></span>
+                                        <div class="inner-title">
+                                            <h3>Trusted Agency</h3>
+                                            <p>We are a registered agency</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Features Style2 Single Box-->
+                                <!--Start Features Style2 Single Box-->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="features-style2-single-box">
+                                        <span class="icon-checking"></span>
+                                        <div class="inner-title">
+                                            <h3>Quality Services</h3>
+                                            <p>We ensure the best solutions get delivered</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Features Style2 Single Box-->
+                                <!--Start Features Style2 Single Box-->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="features-style2-single-box">
+                                        <span class="icon-cyber-security"></span>
+                                        <div class="inner-title">
+                                            <h3>Best Strategy</h3>
+                                            <p>With our AI integrated strategies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Features Style2 Single Box-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Features Style2 Area-->
+
+    <!--Start Blog Style1 Area-->
+    <section class="blog-style1-area">
+        <div class="blog-style1-area__bg"></div>
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="sub-title">
+                    <div class="border-box"></div>
+                    <h3>What’s Happening</h3>
+                </div>
+                <h2>News & Articles</h2>
+            </div>
+            <div class="row">
+
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-12 col-lg-12">
+                    <div class="single-blog-style1">
+                        <rssapp-wall id="tUnw8WjWtYT1oJ3Z"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+
+
+            </div>
+        </div>
+    </section>
+    <!--End Blog Style1 Area-->
+
     <!--Start Partner Area-->
-    <section class="partner-area">
+    <section class="partner-area bg-white">
         <div class="container">
             <div class="brand-content">
                 <div class="inner">
                     <ul class="partner-box partner-carousel owl-carousel owl-theme owl-dot-style1 rtl-carousel">
                         <!--Start Single Partner Logo Box-->
                         <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/micropep.jpg')}}" alt="Awesome Image"></a>
+                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-1.png')}}" alt="Awesome Image"></a>
                         </li>
                         <!--End Single Partner Logo Box-->
                         <!--Start Single Partner Logo Box-->
                         <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/atmonia.png')}}" alt="Awesome Image"></a>
+                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-2.png')}}" alt="Awesome Image"></a>
                         </li>
                         <!--End Single Partner Logo Box-->
                         <!--Start Single Partner Logo Box-->
                         <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/tillo.png')}}" alt="Awesome Image"></a>
+                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-3.png')}}" alt="Awesome Image"></a>
                         </li>
                         <!--End Single Partner Logo Box-->
                         <!--Start Single Partner Logo Box-->
                         <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/weedout.png')}}" alt="Awesome Image"></a>
+                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-4.png')}}" alt="Awesome Image"></a>
                         </li>
                         <!--End Single Partner Logo Box-->
                     </ul>
@@ -708,7 +790,5 @@
         </div>
     </section>
     <!--End Partner Area-->
-
-
 
 @endsection
