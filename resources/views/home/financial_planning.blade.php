@@ -52,200 +52,140 @@
                 <div class="col-xl-12">
                     <div class="service-item three details">
                         <div class="service-thumb">
-                            <img src="{{asset('home/images/service.png')}}" alt="service">
+                            <img src="{{asset('home/images/fin1.jpg')}}" alt="service">
                         </div>
                         <div class="service-content">
-                            <h2 class="title">Welcome to
-                                the next era
-                                of
-                                wealth
-                                creation.</h2>
+                            <h2 class="title">
+                                What is financial planning?
+                            </h2>
                             <p>
-                                Our focus is to help investors
-                                achieve their financial goals by
-                                recommending investment
-                                strategies specific to their
-                                unique situation. Working
-                                alongside our planning team,
-                                we’ll help you understand
-                                where you are invested and
-                                why, without complicated
-                                jargon.
-
+                                Financial planning helps you understand where you are today and create a roadmap to get you where you want to
+                                be. Planning is personalized to you—whether you’re saving for a single goal, like retirement, or need
+                                comprehensive planning and wealth management, Rebit Asset is your best bidder to choose.
                             </p>
+                            <ul style="list-style-type: disc;">
+                                <li>Discover your goals</li>
+                                <li>Consider all aspects of your financial life</li>
+                                <li>Identify action steps</li>
+                                <li>Create an investment strategy tailored to your goals</li>
+                            </ul>
+
                             <div class="service-bottom-content">
-                                <h2 class="title">Reach your potential</h2>
+                                <h2 class="title">Why is financial planning important?</h2>
                                 <p>
-                                    Activate your custom investment strategy with a team of experts to help
-                                    you execute it.
+                                    Financial planning helps you take control of your future:
                                 </p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h2 class="title">Planning</h2>
-                                        <p>
-                                            Work with our team of Financial
-                                            Planners for ongoing support,
-                                            portfolio analysis and investment
-                                            recommendations.
-                                        </p>
-                                        <h6>Portfolio Analysis</h6>
-                                        <p>
-                                            We'll review your current portfolios to make
-                                            sure they are suitable for your situation.
-                                        </p>
-                                        <h6>Investment Recommendations</h6>
-                                        <p>
-                                            Are you a DIY investor? Our team can help
-                                            design your portfolio, but you'll handle the
-                                            implementation.
-                                        </p>
-                                        <h6>Ongoing support</h6>
-                                        <p>
-                                            Whether you have questions about your
-                                            retirement account or crypto—our advisors
-                                            will provide unbiased advice and education.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h2 class="title">Management</h2>
-                                        <p>
-                                            <span class="text-warning">New! 0.00% annual fee for assets
-                                            under management fees*</span><br/>
-                                            Let us do the heavy lifting and
-                                            manage your assets for you. Fullservice investment management
-                                            crafted by our team and customized
-                                            to achieve your goals.
-
-                                        </p>
-                                        <h6>We are a team of fiduciary advisors</h6>
-                                        <p>
-                                            We’re not a robo-advisor and never earn a
-                                            commission. Instead, we select, trade,
-                                            monitor and rebalance a portfolio that
-                                            reflects your unique needs, not ours.
-                                        </p>
-                                        <h6>We believe in trust and transparency</h6>
-                                        <p>We invest according to your risk
-                                            preferences and ensure you clearly
-                                            understand your portfolio and its
-                                            associated risks.
-                                        </p>
-                                        <h6>* 0.00% annual management fee for all
-                                            active Range members</h6>
-                                        <p>In addition to no investment minimums, we
-                                            waived the annual management fee for
-                                            investors . Schedule a call with our support
-                                            team member to learn more.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="title">How does it work?</h2>
-                            <div class="service-bottom-content">
-                                <p>Our financial advisors will:</p>
                                 <ul style="list-style-type: disc;">
-                                    <li>Determine ability and willingness to take investment risk (risk profile created with Qualitative Wealth Approach)</li>
-                                    <li>Analyze current portfolio and contributions</li>
-                                    <li>Evaluate any misalignment between risk profile, financial goals, and current strategy</li>
-                                    <li>Prepare and present proposed changes (e.g., improve diversification, change contributions, combine accounts)</li>
-                                    <li>Manage investment accounts - now available to all members at no additional fee</li>
+                                    <li>Feel more confident about reaching your financial goals</li>
+                                    <li>Save for milestones like college and retirement</li>
+                                    <li>Build an investment portfolio tailored to your goals</li>
+                                    <li>Know where you want to go and how to stay on track</li>
                                 </ul>
+                            </div>
+                            <div class="service-bottom-content">
+                                <h2 class="title">Here's what's inside your financial plan:</h2>
+                            </div>
+                            <div class="row justify-content-center mb-30-none">
 
-                                <div class="about-btn two">
-                                    <a href="{{route('register')}}" class="btn--base">Get Started</a>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                    <div class="service-item three">
+                                        <div class="service-icon">
+                                            <img src="{{asset('home/images/dart.jpg')}}" alt="icon">
+                                        </div>
+                                        <div class="service-content">
+                                            <h3 class="title">Retirement Goals</h3>
+                                            <p>
+                                                Tell us when you plan to retire and what you need for expenses to support your lifestyle.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                    <div class="service-item three">
+                                        <div class="service-icon">
+                                            <img src="{{asset('home/images/dollar.jpg')}}" alt="icon">
+                                        </div>
+                                        <div class="service-content">
+                                            <h3 class="title">Finances</h3>
+                                            <p>
+                                                Include your income, investments, and assets.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                    <div class="service-item three">
+                                        <div class="service-icon">
+                                            <img src="{{asset('home/images/list.jpg')}}" alt="icon">
+                                        </div>
+                                        <div class="service-content">
+                                            <h3 class="title">Results & Action Steps</h3>
+                                            <p>
+                                                You'll get your probability of reaching your goals and steps to take action.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
                         <div class="service-content">
-                            <h2 class="title">How does it work?</h2>
-                            <p>
-                                We know how important your investments are to you
-                                and fully expect our investors to ask questions as
-                                often as needed. Our responsiveness is paramount
-                                and we rely on them most often.<br/>
-                                <b>Please note:</b>
-                                for investors who have entrusted Range to
-                                manage their investments, your managed accounts are
-                                monitored on a daily basis and periodically updated based on
-                                portfolio manager discretion.
-
-                            </p>
-
-                            <div class="about-btn two">
-                                <a href="{{route('register')}}" class="btn--base">Get Started</a>
+                            <h2 class="title">Create your financial plan and see the probability of your success—in three easy steps.</h2>
+                            <div class="service-bottom-content">
+                                <p>
+                                    Because we believe reaching your financial goals for is one of the most important achievements, our
+                                    complimentary plan will help you see what it will take to live the way you want.
+                                </p>
+                                <img src="{{asset('home/images/dash.jpg')}}" alt="icon">
                             </div>
                         </div>
                         <div class="service-content">
-                            <h2 class="title">Key planning features</h2>
+                            <h2 class="title">Write down your goals.</h2>
                             <div class="service-bottom-content">
-                                <p>Our financial planners have access to a full suite of
-                                    industry-leading portfolio analytics tools to manage
-                                    the investment planning process. Once we
-                                    understand your specific situation, we will populate
-                                    your profile with the details of your investment plan.
-                                    You won’t have to comb through a multi-page
-                                    comprehensive financial plan or your investment
-                                    policy statement.
+                                <p>
+                                    Start by entering your goals, like when you plan to retire and how much you'll need for expenses to support your
+                                    lifestyle. Then input your financial information like your income, asset investments and send it to our financial
+                                    planning team for guidance.
+                                </p>
+                                <p>
+                                    Our financial advisors runs 1,000 simulated market projections with your input to generate the probability you
+                                    will reach your goals. Stress test your plan with an interactive tool that lets you see the impact of adjusting your
+                                    financial planning start-up amount and more.
+                                </p>
+                                <img src="{{asset('home/images/analytics.jpg')}}" alt="icon">
+                                <img src="{{asset('home/images/ready.jpg')}}" alt="icon" class="mt-3">
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="title">Review your plan and take action.</h2>
+                            <div class="service-bottom-content">
+                                <p>
+                                    We'll help you understand your probability of reaching your goals and what steps you could take next to put your
+                                    plan into action. You can update your plan as life changes so you stay on track.
                                 </p>
                             </div>
-
                         </div>
                         <div class="service-content">
-                            <h2 class="title text-warning">Example
-                                Recommendations</h2>
+                            <h2 class="title text-warning">
+                                Ready to get started? Rebit Asset can help you with financial planning—whatever your needs
+                                may be.
+                            </h2>
                             <div class="service-bottom-content row">
-                                <div class="col-md-6">
-                                    <h6>Purchase I-Bonds</h6>
+                                <div class="col-md-12">
+                                    <h6>Quickly write down your goals and send to our financial advisors</h6>
                                     <p>
-                                        I-bonds are governmentbacked savings bonds that
-                                        adjust with the rate of inflation.
-                                        Since you already have a
-                                        substantial cash runway and no
-                                        consumer debt, we recommend
-                                        investing your $10,000 in
-                                        excess savings into I-bonds
-                                        given the current elevated
-                                        interest rate (6.89%). You can
-                                        set up an account at no cost.
-                                        Keep in mind, redemptions
-                                        cannot be made within the first
-                                        12 months and you’ll be
-                                        penalized three months of
-                                        interest for any redemptions
-                                        made prior to 12 months.
+                                        Our advisors and planning tools will help you see how much to save for college, how much your monthly
+                                        mortgage might be, how much to invest, how to prepare and live in retirement, and more.
                                     </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6>Change your
-                                        investment mix</h6>
-                                    <p>
-                                        Since your taxable brokerage
-                                        account is currently in a loss
-                                        position (cost basis > portfolio
-                                        value) this is
-                                        an opportune time to reallocate
-                                        your portfolio without triggering
-                                        capital gains taxes. We
-                                        recommend selling ABC mutual
-                                        fund and XYZ mutual
-                                        and buying 60% Stock Market ETF
-                                        and 40% Asset Market ETF. This
-                                        change will increase your
-                                        portfolio diversification and
-                                        reduce investment costs.
 
-                                    </p>
+                                    <img src="{{asset('home/images/analytics2.jpg')}}" alt="icon" class="mt-3">
+                                    <p>We believe financial planning is one of the most important goals for most investors. That's why every Rebit client
+                                        can get a complimentary financial plan focused on achieving your goals. Quickly write down your goals and send
+                                        to our financial team advisors, and in as little as 15 minutes you’ll be able to see the probability of reaching your
+                                        financial goals—and what you could do next.</p>
                                 </div>
+
                             </div>
-                            <h2 class="title text-warning">Still have questions?</h2>
-                            <p>
-                                Set up a 1:1 call with our suppprt team to get a walk through of assets.
-                                Just take a moment to create an account and fill out our form. You can
-                                also call or text us now at . to create an account and fill out our form.
-                            </p>
 
                         </div>
                     </div>
