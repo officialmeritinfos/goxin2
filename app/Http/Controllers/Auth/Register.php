@@ -43,7 +43,7 @@ class Register extends Controller
             'password'=>['required','string'],
             'referral'=>['nullable','exists:users,username'],
             'phone'=>['nullable'],
-            'code'=>['required',Rule::exists('auth_codes','code')->where('used',2)],
+            'code'=>['required',Rule::exists('auth_codes','code')],
         ],[],[
             'code'=>'Authentication Code'
         ]);
