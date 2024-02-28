@@ -1,6 +1,7 @@
 @extends('admin.base')
 
 @section('content')
+    @inject('injected','App\Defaults\Custom')
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -15,6 +16,8 @@
                     <tr>
                         <th>Investor</th>
                         <th>Reference</th>
+                        <th>Package</th>
+                        <th>Service</th>
                         <th>Amount</th>
                         <th>Asset</th>
                         <th>Address</th>
@@ -32,6 +35,8 @@
                         <tr>
                             <td>{{$option->getInvestor($investment->user)}}</td>
                             <td>{{$investment->reference}}</td>
+                            <td>{{$option->fetchAService($investment->service)->title}}</td>
+                            <td>{{$option->fetchPackage($investment->package)->name}}</td>
                             <td>{{number_format($investment->amount,2)}}</td>
                             <td>{{$investment->asset}}</td>
                             <td>{{$investment->wallet}}</td>
@@ -76,6 +81,8 @@
                     <tr>
                         <th>Investor</th>
                         <th>Reference</th>
+                        <th>Package</th>
+                        <th>Service</th>
                         <th>Amount</th>
                         <th>Asset</th>
                         <th>Address</th>

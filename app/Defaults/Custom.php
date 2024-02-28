@@ -2,6 +2,7 @@
 namespace App\Defaults;
 
 use App\Models\InvestmentReturn;
+use App\Models\Package;
 use App\Models\ReturnType;
 use App\Models\Service;
 use App\Models\User;
@@ -12,7 +13,7 @@ class Custom{
     public function getInvestor($id)
     {
         $user = User::where('id',$id)->first();
-        return $user->name;
+        return $user->name??'N/A';
     }
     public function getInvestorUsername($id)
     {
@@ -62,5 +63,20 @@ class Custom{
     public function getServices()
     {
         return Service::where('status',1)->get();
+    }
+
+    //get service investments
+    public function fetchServicePackage($id)
+    {
+        return Package::where('service',$id)->where('status',1)->get();
+    }
+
+    public function fetchAService($id)
+    {
+        return Service::where('status',1)->where('id',$id)->first();
+    }
+    public function fetchPackage($id)
+    {
+        return Package::where('status',1)->where('id',$id)->first();
     }
 }

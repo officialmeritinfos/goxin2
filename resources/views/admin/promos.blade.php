@@ -11,13 +11,12 @@
             @include('templates.notification')
             <div class="table-responsive">
                 <div class="text-center">
-                    <a href="{{route('admin.promo.create')}}" class="btn btn-primary">Add New</a>
+                    <a href="{{route('admin.promo.new')}}" class="btn btn-primary">Add New</a>
                 </div>
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Content</th>
+                        <th>Code</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
@@ -25,23 +24,18 @@
                     <tbody>
                     @foreach($promos as $promo)
                         <tr>
-                            <td>{{$promo->title}}</td>
-                            <td>{!! $promo->content !!}</td>
+                            <td>{{$promo->code}}</td>
                             <td>
-                                @switch($promo->status)
+                                @switch($promo->used)
                                     @case(1)
-                                        <span class="badge badge-success">Active</span>
+                                        <span class="badge badge-danger">Used</span>
                                         @break
                                     @default
-                                        <span class="badge badge-danger">Inactive</span>
+                                        <span class="badge badge-success">Not used</span>
                                         @break
                                 @endswitch
                             </td>
                             <td>
-                                <a href="{{route('admin.promo.edit',['id'=>$promo->id])}}"
-                                   class="btn btn-primary" style="margin-bottom: 5px;">
-                                    <i class=""></i> Edit
-                                </a>
                                 <a href="{{route('admin.promo.delete',['id'=>$promo->id])}}"
                                    class="btn btn-danger">
                                     <i class=""></i> Delete

@@ -1,6 +1,6 @@
 @extends('admin.base')
-
 @section('content')
+    @inject('injected','App\Defaults\Custom')
 
     <div class="card">
         <div class="card-body">
@@ -59,6 +59,8 @@
                             <thead style="background-color:#84B0CA ;" class="text-white">
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">Service</th>
+                                <th scope="col">Package</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Current Profit</th>
                                 <th scope="col">Roi</th>
@@ -68,6 +70,8 @@
                             <tbody>
                             <tr>
                                 <th scope="row">1</th>
+                                <td>{{$injected->fetchAService($investment->service)->title}}</td>
+                                <td>{{$injected->fetchPackage($investment->package)->name}}</td>
                                 <td>${{number_format($investment->amount,2)}}</td>
                                 <td>${{number_format($investment->currentProfit,2)}}</td>
                                 <td>{{number_format($investment->roi)}}%</td>

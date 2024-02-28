@@ -44,13 +44,13 @@
 <!-- End Preloader Area -->
 
 <!-- Start User Area -->
-<section class="user-area">
-    <div class="container">
-        <div class="user-form-content">
+<section class="user-area" style="margin-top: 10rem;margin-bottom: 10rem;">
+    <div class="container" >
+        <div class="user-form-content" >
             <h3>Register</h3>
             <p>Register to continue to {{$siteName}}.</p>
 
-            <form class="user-form" method="post" action="{{route('auth.register')}}">
+            <form class="user-form" method="post" action="{{route('auth.register')}}" >
                 @include('templates.notification')
                 @csrf
                 <div class="row">
@@ -110,6 +110,16 @@
                     </div>
 
                     <div class="col-12">
+                        <div class="form-group">
+                            <label>Authentication Code<i class="ri-information-fill" data-bs-toggle="tooltip"
+                                title="This is code that was given to you by one of our representative for onboarding purpose.
+                                If you do not have it, you can request for one from our agents."></i> </label>
+                            <input class="form-control" type="password" name="code"
+                                   placeholder="Enter the unique code that was given to you">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
                         <button class="default-btn register" type="submit">
                             Sign up
                         </button>
@@ -127,7 +137,15 @@
 </section>
 <!-- End User Area -->
 
+<div class="dark-bar">
+    <a href="#" class="d-flex align-items-center">
+        <span class="dark-title">Enable Dark Theme</span>
+    </a>
 
+    <div class="form-check form-switch">
+        <input type="checkbox" class="checkbox" id="darkSwitch">
+    </div>
+</div>
 <!-- Start Go Top Area -->
 <div class="go-top">
     <i class="ri-arrow-up-s-fill"></i>

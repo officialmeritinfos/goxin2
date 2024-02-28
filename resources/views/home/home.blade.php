@@ -1,727 +1,221 @@
 @extends('home.base')
 @section('content')
-    <!-- Start Main Slider -->
-    <section class="main-slider style2">
-        <div class="slider-box">
-            <!-- Banner Carousel -->
-            <div class="banner-carousel owl-theme owl-carousel">
-                <!-- Slide -->
-                <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/ai2.jpg')}})">
-                    </div>
-                    <div class="auto-container">
-                        <div class="content text-center">
-                            <div class="big-title">
-                                <h2>
-                                    AI- Integrated<br> Investment
-                                </h2>
-                            </div>
-                            <div class="btns-box">
-                                <a class="btn-one" href="{{route('register')}}">
-                                        <span class="txt">
-                                            Get Started<i class="icon-refresh arrow"></i>
-                                        </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide -->
-                <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/images/biotech.jpg')}})">
-                    </div>
-                    <div class="auto-container">
-                        <div class="content text-center">
-                            <div class="big-title">
-                                <h2>
-                                    Invest in Biotechnology<br> with a Notable firm
-                                </h2>
-                            </div>
-                            <div class="btns-box">
-                                <a class="btn-one" href="{{route('register')}}">
-                                        <span class="txt">
-                                            Get Started<i class="icon-refresh arrow"></i>
-                                        </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Slide -->
-                <div class="slide">
-                    <div class="image-layer" style="background-image:url({{asset('home/serv/2.png')}})">
-                    </div>
-                    <div class="auto-container">
-                        <div class="content text-center">
-                            <div class="big-title">
-                                <h2>
-                                    Medical Cannabis Investment<br> Services
-                                </h2>
-                            </div>
-                            <div class="btns-box">
-                                <a class="btn-one" href="{{route('register')}}">
-                                        <span class="txt">
-                                            Get Started<i class="icon-refresh arrow"></i>
-                                        </span>
-                                </a>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Banner
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="banner-section">
+        <div class="banner-text">
+            <span>INVEST</span>
+        </div>
+        <div class="banner-element-one">
+            <img src="{{asset('home/images/element/element-3.png')}}" alt="element">
+        </div>
+        <div class="banner-element-two">
+            <img src="{{asset('home/images/element/element-4.png')}}" alt="element">
+        </div>
+        <div class="banner-element-three">
+            <img src="{{asset('home/images/element/element-5.png')}}" alt="element">
+        </div>
+        <div class="banner-element-four">
+            <img src="{{asset('home/images/element/element-6.png')}}" alt="element">
+        </div>
+        <div class="banner-element-five">
+            <img src="{{asset('home/images/element/element-7.png')}}" alt="element">
+        </div>
+        <div class="banner-group-shape">
+            <div class="banner-group-element-two">
+                <img src="{{asset('home/images/fingrowth.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-three">
+                <img src="{{asset('home/images/element/element-10.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-four">
+                <img src="{{asset('home/images/element/element-6.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-five">
+                <img src="{{asset('home/images/element/element-5.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-six">
+                <img src="{{asset('home/images/element/element-11.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-seven">
+                <img src="{{asset('home/images/element/element-12.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-eight">
+                <img src="{{asset('home/images/element/element-13.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-nine">
+                <img src="{{asset('home/images/element/element-14.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-ten">
+                <img src="{{asset('home/images/element/element-15.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-eleven">
+                <img src="{{asset('home/images/element/element-16.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-twelve">
+                <img src="{{asset('home/images/element/element-17.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-thirteen">
+                <img src="{{asset('home/images/element/element-18.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-fourteen">
+                <img src="{{asset('home/images/element/element-19.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-fifteen">
+                <img src="{{asset('home/images/element/element-20.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-sixteen">
+                <img src="{{asset('home/images/element/element-21.png')}}" alt="element">
+            </div>
+            <div class="banner-group-element-seventeen">
+                <img src="{{asset('home/images/element/element-22.png')}}" alt="element">
+            </div>
+        </div>
+        <div class="container custom-container">
+            <div class="row align-items-end mb-30-none">
+                <div class="col-xl-7 col-lg-7 mb-30">
+                    <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
+                        <h1 class="title">Smarter Way to grow your wealth</h1>
+                        <span class="sub-title">build your wealth with {{$siteName}}</span>
+                        <p>
+                            Invest with confidence and benefit from the reliability of a trusted broker with a proven record of stability, security and strength.
+                        </p>
+                        <div class="banner-arrow">
+                            <img src="{{asset('home/images/element/element-1.png')}}" alt="element">
+                        </div>
+                        <div class="banner-widget">
+                            <div class="banner-widget-wrapper">
+                                <div class="banner-widget-left">
+                                    <div class="banner-widget-thumb">
+                                        <img src="{{asset('home/images/element/element-2.png')}}" alt="element">
+                                    </div>
+                                </div>
+                                <div class="banner-widget-middle">
+                                    <div class="banner-widget-content">
+                                        <p><span>40,000+</span> Satisfied Clients</p>
+                                    </div>
+                                </div>
+                                <div class="banner-widget-right">
+                                    <div class="banner-widget-btn">
+                                        <a href="{{route('register')}}" class="btn--base">Get Started</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- End Main Slider -->
-    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,1958,1831,74,2,5426" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
-    <!-- /.End of tricker -->
-    <!--Start Service Style1 Area-->
-    <section class="service-style1-area">
-        <div class="container">
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Banner
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+                "symbols": [
+                {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                },
+                {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "US 100"
+                },
+                {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                },
+                {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "Bitcoin"
+                },
+                {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "Ethereum"
+                }
+            ],
+                "showSymbolLogo": true,
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Scroll-To-Top
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Scroll-To-Top
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Experience Section
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="experience-secction">
+        <div class="container custom-container-four">
             <div class="row">
-                <div class="col-xl-5">
-                    <div class="service-style1__title">
-                        <div class="sec-title sec-title--style2">
-                            <div class="sub-title">
-                                <div class="border-box"></div>
-                                <h3>What we do</h3>
-                            </div>
-                            <h2>Services We’re<br> Offering</h2>
-                        </div>
-                        <div class="inner-text">
-                            <p>We are utilizing a super AI-model based strategy to ensure that you have the best returns possible.</p>
-                        </div>
-
-                        <div class="video-holder-box">
-                            <div class="video-gallery-style1">
-                                <div class="video-gallery-style1__bg"
-                                     style="background-image: url({{asset('home/images/resources/video-gallery-style1-bg.jpg')}});">
-                                </div>
-                                <div class="icon wow zoomIn animated" data-wow-delay="300ms"
-                                     data-wow-duration="1500ms">
-                                    <a class="video-popup" title="Video Gallery"
-                                       href="https://www.youtube.com/watch?v=p25gICT63ek">
-                                        <span class="fa fa-play"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-xl-7">
-                    <div class="service-style1__content">
-                        <div class="row justify-content-center">
-                            @foreach($services as $service)
-                                <!--Start Single Service Style1-->
-                                <div class="col-xl-4 col-lg-4 col-md-4">
-                                    <div class="single-service-style1">
-                                        <div class="shape-box"></div>
-                                        <div class="icon-holder">
-                                            <span class="icon-report"></span>
-                                        </div>
-                                        <div class="title-holder">
-                                            <h3>
-                                                <a href="{{route('service.details',['id'=>$service->id])}}">
-                                                    {{$service->title}}
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--End Single Service Style1-->
-                            @endforeach
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--End Service Style1 Area-->
-
-    <!--Start About Style2 Area-->
-    <section class="about-style2-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xl-6">
-                    <div class="about-style2__content">
-                        <div class="sec-title sec-title--style2">
-                            <div class="sub-title">
-                                <div class="border-box"></div>
-                                <h3>About the company</h3>
-                            </div>
-                            <h2>We’re Providing the<br> Best Solution with AI & Experts</h2>
-                        </div>
-                        <div class="inner-content">
-                            <div class="top-text">
-                                <div class="icon">
-                                    <span class="icon-recruit"></span>
-                                </div>
-                                <div class="inner-title">
-                                    <h3>Grow your wealth with reputable and proof-based strategies.</h3>
-                                </div>
-                            </div>
-
-                            <div class="text-box">
-                                <p>
-                                    Welcome to {{$siteName}}, your all-in-one destination for navigating the world of investments.
-                                    Specializing in Agriculture, stocks,
-                                    retirement planning, gold, medical cannabis, and oil and gas,
-                                    {{$siteName}} is your gateway to a diverse range of lucrative opportunities.
-                                </p>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <ul>
-                                        <li>
-                                            <span class="icon-check"></span>
-                                            Automated Returns
-                                        </li>
-                                        <li>
-                                            <span class="icon-check"></span>
-                                            Audited by experts
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xl-6">
-                                    <ul>
-                                        <li>
-                                            <span class="icon-check"></span>
-                                            Agriculture and Real Estate dominated
-                                        </li>
-                                        <li>
-                                            <span class="icon-check"></span>
-                                            AI-driven strategies
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="btn-box">
-                                <a class="btn-one" href="{{url('about')}}">
-                                    <span class="txt">Discover More</span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-6">
-                    <div class="about-style2__image clearfix">
-                        <div class="shape-1"></div>
-                        <div class="shape-2"></div>
-                        <div class="border-box float-bob-y"></div>
-                        <div class="inner">
-                            <img src="{{asset('home/images/about/about-style2__image-1.jpg')}}" alt="">
-                            <div class="overlay-content">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="48">0</span>M+
-                                </div>
-                                <h3>Investment Completed</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--End About Style2 Area-->
-
-    <!--Start working process Area-->
-    <section class="working-process-area">
-        <div class="container">
-            <div class="sec-title text-center">
-                <div class="sub-title">
-                    <div class="border-box"></div>
-                    <h3>our work process</h3>
-                </div>
-                <h2>How We Work</h2>
-            </div>
-            <div class="row">
-
-                <!--Start working process Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="working-process__single wow fadeInRight" data-wow-delay="100ms"
-                         data-wow-duration="1500ms">
-                        <div class="working-process__single-inner">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="{{asset('home/images/resources/working-process-img1.jpg')}}" alt="" />
-                                </div>
-                                <div class="counting"></div>
-                            </div>
-
-                            <div class="content-box text-center">
-                                <h3><a href="#">SIGN UP</a></h3>
-                                <p>
-                                    Register a free account and start your first step to yieldind daily income from our Agro, Real estate, gold mine and stock market projects.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End working process Single-->
-
-                <!--Start working process Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="working-process__single wow fadeInRight" data-wow-delay="300ms"
-                         data-wow-duration="1500ms">
-                        <div class="working-process__single-inner">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="{{asset('home/images/deposit.png')}}" alt="" />
-                                </div>
-                                <div class="counting"></div>
-                            </div>
-
-                            <div class="content-box text-center">
-                                <h3><a href="#">FUND YOUR REGISTERED ACCOUNT</a></h3>
-                                <p>Fund your registered account by paying into the company's account to enable you buy a share and earn in any of our projects.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End working process Single-->
-                <!--Start working process Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="working-process__single wow fadeInRight" data-wow-delay="500ms"
-                         data-wow-duration="1500ms">
-                        <div class="working-process__single-inner">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="{{asset('home/images/resources/working-process-img3.jpg')}}" alt="" />
-                                </div>
-                                <div class="counting"></div>
-                            </div>
-
-                            <div class="content-box text-center">
-                                <h3><a href="#">ENROLL IN A PACKAGE</a></h3>
-                                <p>
-                                    select a suitable level percentage share, which ranges from level 1-3 in any of our
-                                    AGRO, REAL ESTATE, STOCK MARKET or GOLD MINE projects and invest to start earning.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End working process Single-->
-                <!--Start working process Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="working-process__single wow fadeInRight" data-wow-delay="700ms"
-                         data-wow-duration="1500ms">
-                        <div class="working-process__single-inner">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="{{asset('home/images/withdraw.jpg')}}" alt="" />
-                                </div>
-                                <div class="counting"></div>
-                            </div>
-
-                            <div class="content-box text-center">
-                                <h3><a href="#">WITHDRAWAL</a></h3>
-                                <p>After a successful investment, profit can be withdrawn once the investment duration is
-                                    completed. On the 7th day, your earnings will automatically stop. You can as well decide to reinvest.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End working process Single-->
-
-            </div>
-        </div>
-    </section>
-    <!--End working process Area-->
-
-
-    <!--Start Service Style2 Area-->
-    <section class="service-style2-area">
-        <div class="service-style2--primary-bg"></div>
-        <div class="container">
-            <div class="sec-title text-center">
-                <div class="sub-title">
-                    <div class="border-box"></div>
-                    <h3>Our Services</h3>
-                </div>
-                <h2>What We’re Offering</h2>
-            </div>
-            <div class="row text-right-rtl justify-content-center">
-                @foreach($services as $service)
-                    <!--Start Single Service Style2-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="single-service-style2">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="{{asset('home/serv/'.$service->photo)}}" alt="">
-                                </div>
-                                <div class="icon">
-                                    <span class="icon-creative"></span>
-                                </div>
-                            </div>
-                            <div class="title-holder">
-                                <h3><a href="{{route('service.details',['id'=>$service->id])}}">{{$service->title}}</a></h3>
-                                <div class="text">
-                                    <p>
-                                        {{$service->short}}
-                                    </p>
-                                </div>
-                                <div class="btn-box">
-                                    <a href="{{route('service.details',['id'=>$service->id])}}"><span class="icon-right-arrow"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Service Style2-->
-                @endforeach
-            </div>
-        </div>
-    </section>
-    <!--End Service Style2 Area-->
-
-    <!--Start Choose Area-->
-    <section class="choose-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="choose-img-box">
-                        <div class="border-box float-bob-y"></div>
-                        <div class="inner">
-                            <img src="{{asset('home/images/ai.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-6">
-                    <div class="choose-content-box">
-                        <div class="sec-title sec-title--style2">
-                            <div class="sub-title">
-                                <div class="border-box"></div>
-                                <h3>get benefits</h3>
-                            </div>
-                            <h2>Why Choose Our<br> Firm</h2>
-                        </div>
-                        <div class="inner-content">
-                            <div class="top-text">
-                                <p>Although there may be others who claim to be like us, we remain unique for these reasons</p>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-right-arrow"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h3>Investment Analytics</h3>
-                                            <p>
-                                                Track your investments with our real analytics that gives you feedback on
-                                                what you have invested so far.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <span class="icon-right-arrow"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h3>Automated System</h3>
-                                            <p>
-                                                From the deposit to the investment and returns, everything has been automated
-                                                to give you the peace of mind that you have always desired.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--End Choose Area-->
-
-    <!--Start Testimonial Style1 Area-->
-    <section class="testimonial-style1-area">
-        <div class="container">
-            <div class="sec-title text-center">
-                <div class="sub-title">
-                    <div class="border-box"></div>
-                    <h3>our testimonials</h3>
-                </div>
-                <h2>What They Say?</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1-content">
-                        <div class="theme_carousel testimonial-carousel owl-theme owl-carousel" data-options='{
-                                    "loop": true,
-                                    "margin": 30,
-                                    "autoheight":true,
-                                    "lazyload":true,
-                                    "nav": false,
-                                    "dots": false,
-                                    "autoplay": true,
-                                    "autoplayTimeout": 5000,
-                                    "smartSpeed": 500,
-                                    "navText": ["<span class=\"left icon-next\"></span>",
-                                    "<span class=\"right icon-next\"></span>"],
-                                    "responsive":{
-                                    "0" :{ "items": "1" },
-                                    "600" :{ "items" : "1" },
-                                    "768" :{ "items" : "1" },
-                                    "992":{ "items" : "2" },
-                                    "1200":{ "items" : "2" }
-                                }
-                            }'>
-
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">
-                                    <p>
-                                        {{$siteName}} transformed my approach to real estate investing. Their insightful
-                                        strategies opened doors to hidden gems in the market, and their commitment to
-                                        innovation reassured me that I'm on the right path to financial success.
-                                    </p>
-                                </div>
-                                <div class="bottom-box">
-                                    <div class="client-name">
-                                        <h3>Christine Rose</h3>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="client-img">
-                                        <div class="inner">
-                                            <img src="https://ui-avatars.com/api/?name=Christine+Rose&size=100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
-
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">
-                                    <p>
-                                        Investing in gold was always a mystery to me until I found {{$siteName}}. Their expertise
-                                        demystified the precious metal market, and now I confidently navigate the golden
-                                        opportunities they present. Trust them to turn your investments into shining success stories.
-                                    </p>
-                                </div>
-                                <div class="bottom-box">
-                                    <div class="client-name">
-                                        <h3>Mike Hardson</h3>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="client-img">
-                                        <div class="inner">
-                                            <img src="https://ui-avatars.com/api/?name=Mike+Hardson&size=100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
-
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">
-                                    <p>
-                                        {{$siteName}}'s dedication to sustainable agriculture investments aligns perfectly with
-                                        my values. Their guidance goes beyond profits; it's about fostering a greener
-                                        future while reaping the rewards. Joining hands with {{$siteName}} means investing in
-                                        a world that thrives, both financially and environmentally.
-                                    </p>
-                                </div>
-                                <div class="bottom-box">
-                                    <div class="client-name">
-                                        <h3>Samuel F.</h3>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="client-img">
-                                        <div class="inner">
-                                            <img src="https://ui-avatars.com/api/?name=Samuel+F&size=100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">
-                                    <p>
-                                        In the fast-paced world of stocks, {{$siteName}} stands out with its AI-driven approach.
-                                        The accuracy and foresight their technology provides give me a significant edge in
-                                        the market. With {{$siteName}}, I feel confident, informed, and ready to seize every
-                                        opportunity the stock market throws my way.
-                                    </p>
-                                </div>
-                                <div class="bottom-box">
-                                    <div class="client-name">
-                                        <h3>Mike Hardson</h3>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="client-img">
-                                        <div class="inner">
-                                            <img src="https://ui-avatars.com/api/?name=Emily+G&size=100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Testimonial Style1 Area-->
-
-
-    <!--Start Features Style1 Area-->
-    <section class="features-style1-area">
-        <div class="features-style1-img-box">
-            <div class="features-style1-img-bg"
-                 style="background-image: url({{asset('home/images/resources/features-style1-img-bg.jpg')}});">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
-                    <div class="features-style1__content">
-                        <div class="sec-title sec-title--style2">
-                            <div class="sub-title">
-                                <div class="border-box"></div>
-                                <h3>What’s Happening</h3>
-                            </div>
-                            <h2>Looking for Top<br> Investment Firm?</h2>
-                        </div>
-                        <div class="inner-content">
-                            <ul>
-                                <li>
-                                    <span class="icon-right-arrow"></span>
-                                    Registered Company
-                                </li>
-                                <li>
-                                    <span class="icon-right-arrow"></span>
-                                    Over 7 Years of operation
-                                </li>
-                                <li>
-                                    <span class="icon-right-arrow"></span>
-                                    Over $40M+ returned
-                                </li>
-                            </ul>
-                            <div class="btn-box">
-                                <a class="btn-one" href="{{route('register')}}">
-                                    <span class="txt">Get Started</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-7">
-                    <div class="features-style1__items">
-                        <ul>
-                            <li>
-                                <div class="top">
-                                    <div class="icon">
-                                        <span class="icon-help"></span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>We’ve been Serving<br> 7+ Years</h3>
-                                    </div>
-                                </div>
-                                <div class="inner-text">
-                                    <p>Built on a redefined purpose for growth</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="top">
-                                    <div class="icon">
-                                        <span class="icon-customer-review"></span>
-                                    </div>
-                                    <div class="title">
-                                        <h3>The First AI-integrated<br> Investment Firm</h3>
-                                    </div>
-                                </div>
-                                <div class="inner-text">
-                                    <p>
-                                        Top firms for investments come to us to aid and support them
-                                    </p>
-                                </div>
-                            </li>
+                <div class="col-xl-6 col-lg-6 mb-30">
+                    <div class="experience-content">
+                        <h4 class="title">
+                            We are an international financial company engaged in investment activities, which are
+                            related to trading on financial markets and cryptocurrency exchanges performed by qualified professional traders.
+                        </h4>
+                        <ul class="plan-list">
+                            <li>We are fully Regulated</li>
+                            <li>Multi-award winners</li>
+                            <li>AI-integrated solution</li>
                         </ul>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-    <!--End Features Style1 Area-->
-
-
-
-    <!--Start Features Style2 Area-->
-    <section class="features-style2-area">
-        <div class="features-style2-area__bg"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="features-style2__content">
-                        <div class="features-style2__content-bg"
-                             style="background-image: url({{asset('home/images/resources/features-style2__content-bg.jpg')}});">
-                        </div>
-                        <div class="shape-1"></div>
-                        <div class="shape-2"></div>
-                        <div class="top-title">
-                            <h2>We Shape the Perfect<br> Solution for Your Finance</h2>
-                        </div>
-                        <div class="features-style2__content-inner">
-                            <div class="row">
-
-                                <!--Start Features Style2 Single Box-->
-                                <div class="col-xl-4 col-lg-4">
-                                    <div class="features-style2-single-box">
-                                        <span class="icon-conversation-1"></span>
-                                        <div class="inner-title">
-                                            <h3>Trusted Agency</h3>
-                                            <p>We are a registered agency</p>
+                <div class="col-xl-6 col-lg-6 mb-30">
+                    <div class="statistics-item-area">
+                        <p>
+                            {{$siteName}} as a private limited liability company have gained popular support and trust from worldwide customers and investors
+                            owing totally to the teams dedication, hard work and sincerity by using our own in-depth knowledge
+                            supported by proven technology and systems already developed to provide our investors and clients
+                            with a simple and efficient way to invest and manage assets, maintain records, have access to
+                            bank term deposits listed on major exchanges and stock markets, provide access to reports and
+                            analysis tools and a high-touch client/customer service team through a team of over 72 of our
+                            own highly trained service staff.
+                        </p>
+                        <div class="row mb-30-none">
+                            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                                <div class="icon-box-items">
+                                    <div class="content">
+                                        <div class="odo-area">
+                                            <h3 class="odo-title odometer" data-odometer-final="10">0</h3>
+                                            <h3 class="title">Years</h3>
                                         </div>
+                                        <p>of Experience</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="{{asset('home/images/home-three/customer-review.png')}}" alt="icon">
                                     </div>
                                 </div>
-                                <!--End Features Style2 Single Box-->
-                                <!--Start Features Style2 Single Box-->
-                                <div class="col-xl-4 col-lg-4">
-                                    <div class="features-style2-single-box">
-                                        <span class="icon-checking"></span>
-                                        <div class="inner-title">
-                                            <h3>Quality Services</h3>
-                                            <p>We ensure the best solutions get delivered</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                                <div class="icon-box-items style-01">
+                                    <div class="content">
+                                        <div class="odo-area">
+                                            <h3 class="odo-title odometer" data-odometer-final="125">0</h3>
+                                            <h3 class="title">+</h3>
                                         </div>
+                                        <p>Expert Staff</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="{{asset('home/images/home-three/employee.png')}}" alt="icon">
                                     </div>
                                 </div>
-                                <!--End Features Style2 Single Box-->
-                                <!--Start Features Style2 Single Box-->
-                                <div class="col-xl-4 col-lg-4">
-                                    <div class="features-style2-single-box">
-                                        <span class="icon-cyber-security"></span>
-                                        <div class="inner-title">
-                                            <h3>Best Strategy</h3>
-                                            <p>With our AI integrated strategies.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--End Features Style2 Single Box-->
-
                             </div>
                         </div>
                     </div>
@@ -729,66 +223,674 @@
             </div>
         </div>
     </section>
-    <!--End Features Style2 Area-->
 
-    <!--Start Blog Style1 Area-->
-    <section class="blog-style1-area">
-        <div class="blog-style1-area__bg"></div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Experience Section
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Project
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="project-section pb-120">
+        <div class="project-element-one">
+            <img src="{{asset('home/images/element/element-23.png')}}" alt="element">
+        </div>
+        <div class="project-element-two">
+            <img src="{{asset('home/images/element/element-24.png')}}" alt="element">
+        </div>
+        <div class="project-element-three">
+            <img src="{{asset('home/images/element/element-25.png')}}" alt="element">
+        </div>
+        <div class="project-element-four">
+            <img src="{{asset('home/images/element/element-26.png')}}" alt="element">
+        </div>
         <div class="container">
-            <div class="sec-title text-center">
-                <div class="sub-title">
-                    <div class="border-box"></div>
-                    <h3>What’s Happening</h3>
-                </div>
-                <h2>News & Articles</h2>
-            </div>
             <div class="row">
-
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-12 col-lg-12">
-                    <div class="single-blog-style1">
-                        <rssapp-wall id="tUnw8WjWtYT1oJ3Z"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+                <div class="col-xl-12">
+                    <div class="section-header-wrapper">
+                        <div class="section-header">
+                            <h2 class="section-title">Our Recent Industry</h2>
+                            <p>Industry that we recently adopted</p>
+                        </div>
                     </div>
                 </div>
-                <!--End Single Blog Style1-->
-
-
             </div>
-        </div>
-    </section>
-    <!--End Blog Style1 Area-->
+            <div class="project-item-wrapper">
+                <div class="row justify-content-center mb-30-none">
+                    @php $cnt=0; @endphp
+                    @foreach($services as $service)
+                        @if($cnt ==4)
+                            @break
+                        @else
 
-    <!--Start Partner Area-->
-    <section class="partner-area bg-white">
-        <div class="container">
-            <div class="brand-content">
-                <div class="inner">
-                    <ul class="partner-box partner-carousel owl-carousel owl-theme owl-dot-style1 rtl-carousel">
-                        <!--Start Single Partner Logo Box-->
-                        <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-1.png')}}" alt="Awesome Image"></a>
-                        </li>
-                        <!--End Single Partner Logo Box-->
-                        <!--Start Single Partner Logo Box-->
-                        <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-2.png')}}" alt="Awesome Image"></a>
-                        </li>
-                        <!--End Single Partner Logo Box-->
-                        <!--Start Single Partner Logo Box-->
-                        <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-3.png')}}" alt="Awesome Image"></a>
-                        </li>
-                        <!--End Single Partner Logo Box-->
-                        <!--Start Single Partner Logo Box-->
-                        <li class="single-partner-logo-box">
-                            <a href="#"><img src="{{asset('home/images/brand/brand-logo-4.png')}}" alt="Awesome Image"></a>
-                        </li>
-                        <!--End Single Partner Logo Box-->
-                    </ul>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-30">
+                                <div class="project-item">
+                                    <div class="project-thumb">
+                                        <img src="{{asset('home/serv/'.$service->photo)}}" alt="project">
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="overlay-content">
+                                            <h4 class="title"><a href="#">{{$service->title}}</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+                        @php $cnt++; @endphp
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
-    <!--End Partner Area-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Project
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Choose
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="choose-section pb-120">
+        <div class="choose-element-one" data-aos="fade-left" data-aos-duration="1200">
+            <img src="{{asset('home/images/element/element-28.png')}}" alt="element">
+        </div>
+        <div class="choose-element-two">
+            <img src="{{asset('home/images/element/element-29.png')}}" alt="element">
+        </div>
+        <div class="choose-element-three">
+            <img src="{{asset('home/images/element/element-30.png')}}" alt="element">
+        </div>
+        <div class="choose-element-four">
+            <img src="{{asset('home/images/element/element-31.png')}}" alt="element">
+        </div>
+        <div class="choose-element-five">
+            <img src="{{asset('home/images/element/element-32.png')}}" alt="element">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Why Choose {{$siteName}}?</h2>
+                        <p>
+                            Putting your money into work is for your own wealth growth, and here are why {{$siteName}} is the
+                            perfect agency to help you grow your wealth
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-area">
+                <div class="choose-tab">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link" id="software-tab" data-toggle="tab" data-target="#software"
+                                    type="button" role="tab" aria-controls="software" aria-selected="false">Top Industry Experts</button>
+                            <button class="nav-link active" id="company-tab" data-toggle="tab" data-target="#company"
+                                    type="button" role="tab" aria-controls="company" aria-selected="true">Fastest-Growing Company</button>
+                            <button class="nav-link" id="client-tab" data-toggle="tab" data-target="#client"
+                                    type="button" role="tab" aria-controls="client" aria-selected="false">99% Client's Satisfaction</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade" id="software" role="tabpanel" aria-labelledby="software-tab">
+                            <div class="choose-item">
+                                <div class="choose-thumb">
+                                    <img src="{{asset('home/images/element/element-27.png')}}" alt="element">
+                                </div>
+                                <div class="choose-content">
+                                    <h4 class="title"><span class="text--base">Top</span> Industry Experts</h4>
+                                    <p>
+                                        By utilizing the best in the various industries we trade and invest in, we are
+                                        not risking your funds, rather we are ensuring that they yield the expected returns
+                                        and by that means, you can be rest assured that your wealth growth is guaranteed.
+                                        <br/>
+                                        We also utilize the best AI-model to help study the market and give the best
+                                        trading options...from cryptocurrency to forex to medical cannabis,we
+                                        remain the only formidable partners for you
+                                    </p>
+                                    <div class="choose-statistics-area">
+                                        <div class="row mb-30-none">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="120">0</h3>
+                                                            <h3 class="title">+</h3>
+                                                        </div>
+                                                        <p>Awesome Staff</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="35">0</h3>
+                                                            <h3 class="title">K+</h3>
+                                                        </div>
+                                                        <p>Trusted Clients</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="25">0</h3>
+                                                            <h3 class="title">+</h3>
+                                                        </div>
+                                                        <p>Served Countries</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-content-footer">
+                                        <div class="choose-btn">
+                                            <a href="{{route('register')}}" class="btn--base active">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                            <div class="choose-item">
+                                <div class="choose-thumb">
+                                    <img src="{{asset('home/images/element/element-77.png')}}" alt="element">
+                                </div>
+                                <div class="choose-content">
+                                    <h4 class="title"><span class="text--base">Fastest</span> Growing Agency</h4>
+                                    <p>
+                                        We are one of the fastest growing Investment and Asset management Agency out there;
+                                        our yield in 2023 was over $400M on a 12 month business calendar.
+                                        This year, we are already on our way to $200M, meaning that by mid of 2024, we should have
+                                        passed the mark which we set in 2023, and by the end of the year, we should be ending with
+                                        a mark of $600M by our annual projection.
+                                        This puts us on par with so many investment agency who have been there before us.
+                                    </p>
+                                    <div class="choose-statistics-area">
+                                        <div class="row mb-30-none">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="350">0</h3>
+                                                            <h3 class="title">M+</h3>
+                                                        </div>
+                                                        <p>Previous Yield</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="550">0</h3>
+                                                            <h3 class="title">M+</h3>
+                                                        </div>
+                                                        <p>Projected Return</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="36">0</h3>
+                                                            <h3 class="title">%</h3>
+                                                        </div>
+                                                        <p>Percentage Increase</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-content-footer">
+                                        <div class="choose-btn">
+                                            <a href="{{route('register')}}" class="btn--base active">Join us</a>
+                                        </div>
+                                        <div class="choose-video-btn">
+                                            <a class="video" data-rel="lightcase:myCollection" href="https://www.youtube.com/embed/6zsr22OeF2I">
+                                                <i class="las la-video"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="client" role="tabpanel" aria-labelledby="client-tab">
+                            <div class="choose-item">
+                                <div class="choose-thumb">
+                                    <img src="{{asset('home/images/element/element-78.png')}}" alt="element">
+                                </div>
+                                <div class="choose-content">
+                                    <h4 class="title"><span class="text--base">99%</span> Client Satisfaction</h4>
+                                    <p>
+                                        We are a client-centric company - we listen to our users, and adopt their best fitted
+                                        solutions. Over the years we have continually had goodwill with our investors, and this
+                                        is one of the reasons we are where we are today. From making $20M annually to making over $350M
+                                        in 2023, and with a projection of about $600m in 2024.<br/>
+                                        This feat can only be achieved when there is a high referral which of course is a result of trust and
+                                        satisfaction in the company.
+                                    </p>
+                                    <div class="choose-statistics-area">
+                                        <div class="row mb-30-none">
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="35">0</h3>
+                                                            <h3 class="title">K+</h3>
+                                                        </div>
+                                                        <p>Total Clients</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="250">0</h3>
+                                                            <h3 class="title">M+</h3>
+                                                        </div>
+                                                        <p>Total Invested</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                                                <div class="statistics-item">
+                                                    <div class="statistics-content">
+                                                        <div class="odo-area">
+                                                            <h3 class="odo-title odometer" data-odometer-final="25">0</h3>
+                                                            <h3 class="title">+</h3>
+                                                        </div>
+                                                        <p>Served Countries</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-content-footer">
+                                        <div class="choose-btn">
+                                            <a href="{{route('register')}}" class="btn--base active">Join us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Choose
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Call to action
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="call-to-action-section pb-120">
+        <div class="call-to-action-element" data-aos="fade-left" data-aos-duration="1200">
+            <img src="{{asset('home/images/element/element-33.png')}}" alt="element">
+        </div>
+        <div class="wrapper demo-text">
+            <div class="marquee">
+            <span>
+                FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS FINANCIAL SOLUTIONS
+            </span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mb-10-none">
+                <div class="col-xl-9">
+                    <div class="call-to-action-wrapper">
+                        <div class="call-to-action-content">
+                            <h3 class="title">Our award-winning platform gives you access to powerful technical charting & fundamental research tools. </h3>
+                            <h3 class="inner-title">See for yourself an all round digital experience.</h3>
+                        </div>
+                        <div class="call-to-action-btn">
+                            <a href="{{route('register')}}" class="btn--base">Join</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Call to action
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Service
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="service-section ptb-120">
+        <div class="service-element-one">
+            <img src="{{asset('home/images/element/element-34.png')}}" alt="element">
+        </div>
+        <div class="service-element-two">
+            <img src="{{asset('home/images/element/element-35.png')}}" alt="element">
+        </div>
+        <div class="service-element-three">
+            <img src="{{asset('home/images/element/element-36.png')}}" alt="element">
+        </div>
+        <div class="service-element-four">
+            <img src="{{asset('home/images/element/element-36.png')}}" alt="element">
+        </div>
+        <div class="service-element-five">
+            <img src="{{asset('home/images/element/element-37.png')}}" alt="element">
+        </div>
+        <div class="service-shape shape-1"></div>
+        <div class="service-shape shape-2"></div>
+        <div class="service-shape shape-3"></div>
+        <div class="service-shape shape-4"></div>
+        <div class="service-shape shape-5"></div>
+        <div class="service-shape shape-6"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-header-wrapper">
+                        <div class="section-header white">
+                            <h2 class="section-title">Our Awesome Services</h2>
+                            <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                @foreach($services as $service)
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="{{asset('home/serv/'.$service->photo)}}" alt="icon">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title"><a href="{{route('service.details',['id'=>$service->id])}}">{{$service->title}}</a></h3>
+                                <p>{{$service->short}}</p>
+                                <div class="service-btn">
+                                    <a href="{{route('service.details',['id'=>$service->id])}}" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach.
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="{{asset('home/serv/4.jpg')}}" alt="icon">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title"><a href="{{url('financialPlanning')}}">Financial Planning</a></h3>
+                                <p>
+                                    A financial plan is a comprehensive evaluation of an investor’s current and future
+                                    financial state by using currently known variables to predict future cash flows, asset values and withdrawal...
+                                </p>
+                                <div class="service-btn">
+                                    <a href="{{url('financialPlanning')}}" class="custom-btn">Learn More <i class="icon-Group-2361 ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Service
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start About
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="about-section pt-120">
+        <div class="about-element-one">
+            <img src="{{asset('home/images/element/element-39.png')}}" alt="element">
+        </div>
+        <div class="about-element-two">
+            <img src="{{asset('home/images/element/element-40.png')}}" alt="element">
+        </div>
+        <div class="about-element-three">
+            <img src="{{asset('home/images/element/element-7.png')}}" alt="element">
+        </div>
+        <div class="about-element-four">
+            <img src="{{asset('home/images/element/element-41.png')}}" alt="element">
+        </div>
+        <div class="about-element-five">
+            <img src="{{asset('home/images/element/element-42.png')}}" alt="element">
+        </div>
+        <div class="container">
+            <div class="about-area three">
+                <div class="row justify-content-center align-items-center mb-30-none">
+                    <div class="col-xl-6 col-lg-6 mb-30">
+                        <div class="box-wrapper">
+                            <div class="box3"></div>
+                            <div class="box1">
+                                <div class="box-element-one">
+                                    <img src="{{asset('home/images/element/element-14.png')}}" alt="element">
+                                </div>
+                                <div class="box-element-two">
+                                    <img src="{{asset('home/images/element/element-15.png')}}" alt="element">
+                                </div>
+                                <div class="box-element-three">
+                                    <img src="{{asset('home/images/element/element-13.png')}}" alt="element">
+                                </div>
+                                <div class="box-element-four">
+                                    <img src="{{asset('home/images/element/element-6.png')}}" alt="element">
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="box-element-five">
+                                    <img src="{{asset('home/images/element/element-16.png')}}" alt="element">
+                                </div>
+                                <div class="box-element-six">
+                                    <img src="{{asset('home/images/element/element-7.png')}}" alt="element">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-thumb">
+                            <img src="{{asset('home/images/element/element-38.png')}}" alt="element">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 mb-30">
+                        <div class="about-content">
+                            <h2 class="title">Still Delaying? <span class="text--base">Let's work</span></h2>
+                            <p class="para">
+                                We are ranked one of the best Investment agency, and you too can testify to that!
+                            </p>
+                            <p>{{$siteName}} is the best investment agency to help you grow your wealth portfolio and start earning. Save for your
+                            retirement, invest in growing industries.</p>
+                            <div class="about-btn">
+                                <a href="{{route('register')}}" class="btn--base">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End About
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Client
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="client-section ptb-120">
+        <div class="client-element-one">
+            <img src="{{asset('home/images/element/element-44.png')}}" alt="element">
+        </div>
+        <div class="client-element-two">
+            <img src="{{asset('home/images/element/element-45.png')}}" alt="element">
+        </div>
+        <div class="client-element-three">
+            <img src="{{asset('home/images/element/element-46.png')}}" alt="element">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Hear from happy customers</h2>
+                        <p>
+                            We are an international financial company engaged in investment activities, which are related to trading on financial markets and cryptocurrency exchanges performed by qualified professional traders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="client-area">
+                <div class="row justify-content-center mb-10-none">
+                    <div class="col-xl-12">
+                        <div class="client-slider-area">
+                            <div class="client-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+                                                <div class="client-ratings">
+                                                <span class="ratings">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <img src="{{asset('home/images/client/quote.png')}}" alt="quote">
+                                                </div>
+                                            </div>
+                                            <div class="client-content">
+                                                <p>
+                                                    {{$siteName}} has made investing so much easier for me. With their AI technology, I feel like I have a
+                                                    dedicated financial advisor guiding me. It's been a profitable and enlightening experience
+                                                </p>
+                                            </div>
+                                            <div class="client-footer">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="{{asset('home/images/client/client-1.png')}}" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">Mogan Smith</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+                                                <div class="client-ratings">
+                                                <span class="ratings">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <img src="{{asset('home/images/client/quote.png')}}" alt="quote">
+                                                </div>
+                                            </div>
+                                            <div class="client-content">
+                                                <p>
+                                                    As an avid investor, {{$siteName}} has become my go-to platform. Their diversification options and AI
+                                                    algorithms have helped me achieve impressive results. I can't recommend them enough.
+                                                </p>
+                                            </div>
+                                            <div class="client-footer">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="{{asset('home/images/client/client-2.png')}}" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">Manisha Kai</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <div class="client-header">
+                                                <div class="client-ratings">
+                                                <span class="ratings">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <img src="{{asset('home/images/client/quote.png')}}" alt="quote">
+                                                </div>
+                                            </div>
+                                            <div class="client-content">
+                                                <p>
+                                                    {{$siteName}}'s incorporation of crypto mining in their investment options caught my attention. It's
+                                                    refreshing to see an investment company embracing blockchain technology.
+                                                </p>
+                                            </div>
+                                            <div class="client-footer">
+                                                <div class="client-footer-user-thumb">
+                                                    <img src="{{asset('home/images/client/client-3.png')}}" alt="client">
+                                                </div>
+                                                <div class="client-footer-user-content">
+                                                    <h6 class="title">Evana Parsia</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-pagination"></div>
+                                <div class="slider-prev">
+                                    <i class="las la-long-arrow-alt-left"></i>
+                                </div>
+                                <div class="slider-next">
+                                    <i class="las la-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Client
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Blog
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="blog-section pb-130">
+        <div class="blog-element">
+            <img src="{{asset('home/images/element/element-47.png')}}" alt="element">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">{{$siteName}} Latest Posts</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-40-none">
+
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-30">
+                    <div class="blog-item">
+                        <rssapp-wall id="38kEBNRCi1vuK60z"></rssapp-wall>
+                        <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        End Blog
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
 
 @endsection

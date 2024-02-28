@@ -35,7 +35,6 @@ class Dashboard extends Controller
             'latests'=>Investment::where([
                 'user'=>$user->id,'status'=>4
             ])->limit(5)->get(),
-            'promos'=>Promo::where('status',1)->get()
         ];
 
         return view('user.dashboard',$dataView);

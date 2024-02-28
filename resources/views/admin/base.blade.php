@@ -93,7 +93,7 @@
                     <h6 class="collapse-header">Operations</h6>
                     <a class="collapse-item" href="{{url('admin/coins')}}">Wallet</a>
                     <a class="collapse-item" href="{{url('admin/settings')}}">Settings</a>
-                    <a class="collapse-item" href="{{route('admin.promo.index')}}">Promos</a>
+                    <a class="collapse-item" href="{{route('admin.promo.index')}}">Auth Codes</a>
                 </div>
             </div>
         </li>
@@ -216,6 +216,8 @@
 
     </div>
     <!-- End of Content Wrapper -->
+
+
 
 </div>
 <!-- End of Page Wrapper -->

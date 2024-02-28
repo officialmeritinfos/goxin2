@@ -21,6 +21,15 @@ trait Regular
         return (empty($query)) ? $id : $this->generateId($table,$column,$length);
     }
 
+    public function generateUniqueCode($table,$column,$length=10): string
+    {
+        $id = random_int(111111,999999);
+        $query = DB::table($table)->select($column)->where($column,$id)->first();
+        return (empty($query)) ? $id : $this->generateUniqueCode($table,$column,$length);
+    }
+
+
+
     public function codeExpiration()
     {
         $web = GeneralSetting::where('id',1)->first();

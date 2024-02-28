@@ -281,5 +281,31 @@ class HomeController extends Controller
 
         return view('home.career',$dataView);
     }
+    public function financial()
+    {
+        $web = GeneralSetting::where('id',1)->first();
+
+        $dataView = [
+            'siteName'  => $web->name,
+            'web'       => $web,
+            'pageName'  => 'Financial Planning',
+            'packages'  => Package::where('status',1)->get()
+        ];
+
+        return view('home.financial_planning',$dataView);
+    }
+    public function unique()
+    {
+        $web = GeneralSetting::where('id',1)->first();
+
+        $dataView = [
+            'siteName'  => $web->name,
+            'web'       => $web,
+            'pageName'  => 'Our Unique Approach',
+            'packages'  => Package::where('status',1)->get()
+        ];
+
+        return view('home.unique',$dataView);
+    }
 }
 

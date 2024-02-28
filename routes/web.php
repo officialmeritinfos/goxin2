@@ -45,5 +45,7 @@ Route::get('nft',[HomeController::class,'nft']);
 Route::get('forex',[HomeController::class,'forex']);
 Route::get('gold',[HomeController::class,'gold']);
 Route::get('agriculture',[HomeController::class,'agriculture']);
+Route::get('financialPlanning',[HomeController::class,'financial']);
+Route::get('unqiue',[HomeController::class,'unique']);
 
 

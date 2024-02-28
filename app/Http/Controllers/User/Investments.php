@@ -11,6 +11,7 @@ use App\Models\GeneralSetting;
 use App\Models\Investment;
 use App\Models\Package;
 use App\Models\ReturnType;
+use App\Models\Service;
 use App\Models\User;
 use App\Notifications\InvestmentMail;
 use Illuminate\Http\Request;
@@ -46,11 +47,30 @@ class Investments extends Controller
             'user'=>$user,
             'pageName'=>'New Deposit',
             'siteName'=>$web->name,
-            'packages'=>Package::where('status',1)->get(),
+            'packages'=>Service::where('showInDashboard',1)->get(),
             'coins'=>Coin::where('status',1)->get(),
         ];
 
         return view('user.new_investments',$dataView);
+    }
+
+    public function newInvestmentPackages($id)
+    {
+        $web = GeneralSetting::find(1);
+        $user = Auth::user();
+
+        $package =Package::where('status',1)->where('id',$id)->firstOrFail();
+
+        $dataView = [
+            'web'=>$web,
+            'user'=>$user,
+            'pageName'=>'Enroll in package',
+            'siteName'=>$web->name,
+            'package'=>$package,
+            'coins'=>Coin::where('status',1)->get(),
+        ];
+
+        return view('user.service_packages',$dataView);
     }
 
     public function processInvestment(Request $request)
@@ -143,7 +163,8 @@ class Investments extends Controller
             'nextReturn'=>$nextReturn,'currentReturn'=>0,'returnType'=>$returnType->id,
             'numberOfReturns'=>$packageExists->numberOfReturns,'status'=>$status,'duration'=>$packageExists->Duration,
             'package'=>$packageExists->id,
-            'wallet'=>$coinExists->address,'asset'=>$coinExists->asset
+            'wallet'=>$coinExists->address,'asset'=>$coinExists->asset,
+            'service'=>$packageExists->service
         ];
 
         $investment = Investment::create($dataInvestment);

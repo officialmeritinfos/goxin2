@@ -3,18 +3,7 @@
 @inject('injected','App\Defaults\Custom')
 
 
-    @foreach($promos as $promo)
-        <div class="ui-kit-card mb-24">
-            <h3>{{$promo->title}}</h3>
-            <div class="alert alert-primary" role="alert">
-                <h4 class="alert-heading">{{$promo->title}}</h4>
-                {!! $promo->content !!}
-                <div class="mt-3">
-                    <a href="{{route('user.enrollPromo',['id'=>$promo->id])}}" class="btn btn-primary">Enroll</a>
-                </div>
-            </div>
-        </div>
-    @endforeach
+
 
     <div class="today-card-area pt-24">
         <div class="container-fluid">
@@ -180,7 +169,7 @@
 
     <div class="latest-transaction-area">
         <div class="container-fluid">
-            <div class="table-responsive" data-simplebar>
+            <div class="table-responsive h-auto" data-simplebar>
                 <h5 class="mb-2">Most Recent Transactions</h5>
                 <table class="table align-middle mb-0">
                     <thead>

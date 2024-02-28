@@ -110,11 +110,8 @@ Route::post('investors/subLoan',[Investors::class,'subLoan'])
 Route::get('investors/{id}/login',[Investors::class,'loginUser'])->name('investor.login');
 /*=============== PROMO ROUTE ==============================*/
 Route::get('promos',[PromoController::class,'landingPage'])->name('promo.index');
-Route::get('promo/{id}/edit',[PromoController::class,'edit'])->name('promo.edit');
-Route::post('promo/update',[PromoController::class,'updatePromo'])->name('promo.update');
 Route::get('promo/{id}/delete',[PromoController::class,'delete'])->name('promo.delete');
-Route::get('promo/create',[PromoController::class,'create'])->name('promo.create');
-Route::post('promo/new',[PromoController::class,'newPromo'])->name('promo.new');
+Route::get('promo/new',[PromoController::class,'newPromo'])->name('promo.new');
 
 //Logout
 Route::get('logout',[Login::class,'logout']);

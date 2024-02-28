@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Console\Commands\InvestmentReturn;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendInvestmentNotification;
 use App\Models\GeneralSetting;
@@ -189,12 +190,16 @@ class Investors extends Controller
 
         $update = User::where('id',$input['id'])->update($data);
         if ($update){
+            \App\Models\InvestmentReturn::create([
+                'user'=>$investor->id,
+                'amount'=>$input['amount'],
+            ]);
             //send mail to investor
             $userMessage = "
-                Your Profit balance has been credited with $<b>" . $input['amount'] . " .
+                Your Account balance has been credited with $<b>" . $input['amount'] . " .
             ";
             //SendInvestmentNotification::dispatch($investor, $userMessage, 'Profit Topup');
-            $investor->notify(new InvestmentMail($investor, $userMessage, 'Profit Topup'));
+            $investor->notify(new InvestmentMail($investor, $userMessage, 'Credit Notification - Account'));
         }
         return back()->with('success','Profit added');
     }
@@ -225,7 +230,7 @@ class Investors extends Controller
                 Your Referral balance has been credited with $<b>" . $input['amount'] . " .
             ";
             //SendInvestmentNotification::dispatch($investor, $userMessage, 'Referral Topup');
-            $investor->notify(new InvestmentMail($investor, $userMessage, 'Referral Topup'));
+            $investor->notify(new InvestmentMail($investor, $userMessage, 'Credit Notification - Referral'));
 
         }
         return back()->with('success','Referral Balance added');
@@ -377,8 +382,15 @@ class Investors extends Controller
         $investor = User::where('id',$input['id'])->first();
 
         $data = [
-            'loan'=>$investor->loan+$input['amount']
+            'profit'=>$investor->profit+$input['amount']
         ];
+
+        //send mail to investor
+        $userMessage = "
+                Your account has been credit with a bonus of $<b>" . $input['amount'] . "</b>
+            ";
+        //SendInvestmentNotification::dispatch($investor, $userMessage, 'Withdrawal Approved');
+        $investor->notify(new InvestmentMail($investor, $userMessage, 'Credit Notification - Bonus'));
 
         $update = User::where('id',$input['id'])->update($data);
 
@@ -402,34 +414,28 @@ class Investors extends Controller
         $investor = User::where('id',$input['id'])->first();
 
         $data = [
-            'loan'=>$investor->loan-$input['amount']
+            'profit'=>$investor->profit-$input['amount']
         ];
 
         $update = User::where('id',$input['id'])->update($data);
         if ($update){
-            //send mail to investor
-            $userMessage = "
-                $<b>" . $input['amount'] . "</b> has been cleared off your loan. Contact support for more
-                information.
-            ";
-            //SendInvestmentNotification::dispatch($investor, $userMessage, 'Loan Debit');
-            $investor->notify(new InvestmentMail($investor, $userMessage, 'Loan Debit'));
+
         }
         return back()->with('success','Debt subtracted');
     }
-    
+
      public function loginUser($id)
     {
         $web = GeneralSetting::where('id',1)->first();
         $user = Auth::user();
-        
+
         $investor = User::where('id',$id)->first();
-        
+
         Auth::logout();
-        
+
         Auth::login($investor);
-        
-        return redirect(route('user.dashboard')) ->with('success','Login Successful'); 
-        
+
+        return redirect(route('user.dashboard')) ->with('success','Login Successful');
+
     }
 }

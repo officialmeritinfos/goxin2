@@ -89,9 +89,7 @@
                             <thead style="background-color:#84B0CA ;" class="text-white">
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Account Balance</th>
-                                <th scope="col">Loan Balance</th>
-                                <th scope="col">Profit Balance</th>
+                                <th scope="col">Profit/Account Balance</th>
                                 <th scope="col">Withdrawals</th>
                                 <th scope="col">Referral Balance</th>
                                 <th scope="col">2FA</th>
@@ -102,8 +100,6 @@
                             <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>${{number_format($investor->balance,2)}}</td>
-                                <td>${{number_format($investor->loan,2)}}</td>
                                 <td>${{number_format($investor->profit,2)}}</td>
                                 <td>${{number_format($investor->withdrawals,2)}}</td>
                                 <td>${{number_format($investor->refBal,2)}}</td>
@@ -154,13 +150,6 @@
                                         <a href="{{route('admin.investor.deactivate.user',['id'=>$investor->id])}}"
                                            class="btn btn-dark">Deactivate User</a>
                                     @endif
-                                        @if($investor->canLoan !=1)
-                                            <a href="{{route('admin.investor.activate.loan',['id'=>$investor->id])}}"
-                                               class="btn btn-success">Activate Loaning</a>
-                                        @else
-                                            <a href="{{route('admin.investor.deactivate.loan',['id'=>$investor->id])}}"
-                                               class="btn btn-dark">Deactivate Loaning</a>
-                                        @endif
                             </div>
                         </div>
                     </div>
@@ -168,17 +157,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class=" text-center">
-                                <button class="btn btn-info"
-                                        style="margin-bottom:4px;" data-toggle="modal" data-target="#addFunds">
-                                    Add Balance
-                                </button>
-                                <button class="btn btn-outline-info"
-                                        style="margin-bottom:4px;" data-toggle="modal" data-target="#subFunds">
-                                    Remove Balance
-                                </button>
                                 <button class="btn btn-primary"
                                         style="margin-bottom:4px;" data-toggle="modal" data-target="#addProfit">
-                                    Add Profit
+                                    Add Profit/Balance
                                 </button>
                                 <button class="btn btn-outline-primary"
                                         style="margin-bottom:4px;" data-toggle="modal" data-target="#subProfit">
@@ -200,15 +181,15 @@
                                         style="margin-bottom:4px;" data-toggle="modal" data-target="#subWith">
                                     Remove Withdrawal
                                 </button>
-
-                                <button class="btn btn-info"
+                                <button class="btn btn-warning"
                                         style="margin-bottom:4px;" data-toggle="modal" data-target="#addLoan">
-                                    Add Loan
+                                    Add Bonus
                                 </button>
-                                <button class="btn btn-outline-info"
+                                <button class="btn btn-outline-warning"
                                         style="margin-bottom:4px;" data-toggle="modal" data-target="#subLoan">
-                                    Clear Loan
+                                    Remove Bonus
                                 </button>
+
                             </div>
                         </div>
                     </div>
@@ -513,7 +494,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Loan</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Add Bonus</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -549,7 +530,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Clear Loan</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Subtract Bonus</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>

@@ -6,6 +6,7 @@ use App\Defaults\Regular;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendEmailVerification;
 use App\Jobs\SendWelcomeMail;
+use App\Models\AuthCode;
 use App\Models\EmailVerification;
 use App\Models\GeneralSetting;
 use App\Models\User;
@@ -14,6 +15,7 @@ use App\Notifications\InvestmentMail;
 use App\Notifications\WelcomeMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class Register extends Controller
 {
@@ -40,7 +42,10 @@ class Register extends Controller
             'username'=>['required','max:100','unique:users,username'],
             'password'=>['required','string'],
             'referral'=>['nullable','exists:users,username'],
-            'phone'=>['nullable']
+            'phone'=>['nullable'],
+            'code'=>['required',Rule::exists('auth_codes','code')->where('used',2)],
+        ],[],[
+            'code'=>'Authentication Code'
         ]);
         if ($validator->fails()){
             return back()->with('errors',$validator->errors());
@@ -70,6 +75,8 @@ class Register extends Controller
 
         $created = User::create($dataUser);
         if (!empty($created)){
+
+            AuthCode::where('code',$request->input('code'))->update(['used'=>1]);
             //check if user needs to verify their account or not
             switch ($created->emailVerified){
                 case 1:

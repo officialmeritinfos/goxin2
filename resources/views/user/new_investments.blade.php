@@ -1,70 +1,57 @@
 @extends('user.base')
-
 @section('content')
+    @inject('injected','App\Defaults\Custom')
+    <div class="pricing-area">
+        <div class="container-fluid ui-kit-card text-center">
+            <div class="row justify-content-center">
+                @foreach($packages as $service)
 
-    <div class="row">
-        <div class="col-xl-8 mx-auto">
-            <div class="card border-top border-0 border-4 border-primary">
-                <div class="card-body p-5">
-                    <div class="card-title d-flex align-items-center">
-                        <div><i class="bx bxs-user me-1 font-22 text-primary"></i>
-                        </div>
-                        <h5 class="mb-0 text-primary">{{$pageName}}</h5>
-                    </div>
-                    <hr>
-                    <form class="row g-3" method="post" action="{{route('investment.new')}}">
-                        @csrf
-                        @include('templates.notification')
-                        <div class="form-group col-md-12">
-                            <label for="inputAddress2">Amount ($)</label>
-                            <input type="number" class="form-control form-control-lg" id="inputAddress2"
-                                   placeholder="Enter Amount to Invest" name="amount">
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label for="inputAddress2">Package</label>
-                            <select type="number" class="form-control form-control-lg" id="inputAddress2"
-                                    name="package">
-                                <option value="">Select a Package</option>
-                                @foreach($packages as $package)
-                                    <option value="{{$package->id}}">
-                                        {{$package->name}}
-                                        (
-                                        ${{number_format($package->minAmount,2)}}
-                                        -
-                                        @if($package->isUnlimited ==1)
-                                            Unlimited
-                                        @else
-                                            ${{number_format($package->maxAmount)}}
-                                        @endif
-                                    )
-                                    </option>
+                    @if($injected->fetchServicePackage($service->id)->count()>0)
+                        <div class="col-12">
+                            <h4 class="card-title big-title">{{$service->title}}</h4>
+                            <p>
+                                {{$service->short}}
+                            </p>
+                            <div class="row">
+                                @foreach($injected->fetchServicePackage($service->id) as $package)
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="single-pricing-card">
+                                            <div class="pricing-bar">
+                                                <span>{{$package->name}}</span>
+                                                <h2>$29 <sub>/ Per month</sub></h2>
+                                                <p>{{$package->short}}</p>
+                                            </div>
+
+                                            <div class="price-list">
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-check-line"></i>
+                                                        Min Deposit: <b class=''> ${{number_format($package->minAmount,2)}}</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Max Deposit: <b class=''>${{number_format($package->maxAmount,2)}}</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Daily Profit: <b class=''>{{number_format($package->roi,2)}}%</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Weekly Profit: <b class=''>{{number_format($package->roi*7,2)}}%</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Monthly Profit: <b class=''>{{number_format($package->roi*30,2)}}%</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Referral Bonus: <b class=''>{{number_format($package->referral,2)}}%</b></li>
+                                                    <li><i class="ri-check-line"></i>
+                                                        Duration: <b class=''>{{$package->Duration}}</b></li>
+                                                    <!--li>Withdrawal <b class='text-success'>Weekly</b></li-->
+                                                </ul>
+                                                <a href="{{route('new_investment_packages',['id'=>$package->id])}}" class="default-btn">
+                                                    Choose plan
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 @endforeach
-                            </select>
+                            </div>
                         </div>
-                        <div class="form-group col-md-12">
-                            <label for="inputAddress2">Asset</label>
-                            <select type="number" class="form-control form-control-lg" id="inputAddress2"
-                                    name="asset">
-                                <option value="">Select an Asset</option>
-                                @foreach($coins as $coin)
-                                    <option value="{{$coin->asset}}">{{$coin->name}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group col-md-12 mx-auto">
-                            <label for="inputAddress2">Account</label>
-                            <select type="number" class="form-control form-control-lg" id="inputAddress2"
-                                    name="account">
-                                <option value="">Select a Account</option>
-                                <option value="1"> New Deposit</option>
-                                <option value="2">Account Balance</option>
-                            </select>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Deposit</button>
-                        </div>
-                    </form>
-                </div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
