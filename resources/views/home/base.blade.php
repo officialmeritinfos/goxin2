@@ -125,6 +125,8 @@
                                                 <li><a href="{{url('faqs')}}">Frequently Asked Questions</a></li>
                                                 <li><a href="{{url('terms')}}">Terms & Conditions</a></li>
                                                 <li><a href="{{url('privacy')}}">Privacy policy</a></li>
+                                                <li><a href="{{url('testimonials')}}">Testimonials</a></li>
+                                                <li><a href="{{url('security')}}">Staying Safe Online</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu_has_children">
@@ -217,7 +219,7 @@
                     <ul class="footer-list">
                         <li><a href="{{route('login')}}">Account</a></li>
                         <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
-                        <li><a href="{{url('financialPlanning')}}">Privacy Policy</a></li>
+                        <li><a href="{{url('financialPlanning')}}">Financial Planning</a></li>
                     </ul>
                 </div>
             </div>
@@ -228,6 +230,8 @@
                         <li><a href="{{url('/')}}">About us</a></li>
                         <li><a href="{{url('faq')}}">FAQs</a></li>
                         <li><a href="{{url('contact')}}">Contact Us</a></li>
+                        <li><a href="{{url('testimonials')}}">Testimonials</a></li>
+                        <li><a href="{{url('security')}}">Staying Safe Online</a></li>
                     </ul>
                 </div>
             </div>

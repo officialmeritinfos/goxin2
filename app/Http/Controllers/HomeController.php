@@ -170,7 +170,7 @@ class HomeController extends Controller
         $dataView = [
             'siteName'  => $web->name,
             'web'       => $web,
-            'pageName'  => 'Security Information',
+            'pageName'  => 'Staying Safe Online',
             'packages'  => Package::where('status',1)->get()
         ];
 
@@ -306,6 +306,19 @@ class HomeController extends Controller
         ];
 
         return view('home.unique',$dataView);
+    }
+    public function testimonials()
+    {
+        $web = GeneralSetting::where('id',1)->first();
+
+        $dataView = [
+            'siteName'  => $web->name,
+            'web'       => $web,
+            'pageName'  => 'Our Testimonials',
+            'packages'  => Package::where('status',1)->get()
+        ];
+
+        return view('home.testimonials',$dataView);
     }
 }
 
