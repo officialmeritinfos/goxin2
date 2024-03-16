@@ -61,7 +61,7 @@
                             <p>
                                 Financial planning helps you understand where you are today and create a roadmap to get you where you want to
                                 be. Planning is personalized to you—whether you’re saving for a single goal, like retirement, or need
-                                comprehensive planning and wealth management, Rebit Asset is your best bidder to choose.
+                                comprehensive planning and wealth management, {{$siteName}} is your best bidder to choose.
                             </p>
                             <ul style="list-style-type: disc;">
                                 <li>Discover your goals</li>
@@ -167,7 +167,7 @@
                         </div>
                         <div class="service-content">
                             <h2 class="title text-warning">
-                                Ready to get started? Rebit Asset can help you with financial planning—whatever your needs
+                                Ready to get started? {{$siteName}} can help you with financial planning—whatever your needs
                                 may be.
                             </h2>
                             <div class="service-bottom-content row">
@@ -179,7 +179,7 @@
                                     </p>
 
                                     <img src="{{asset('home/images/analytics2.jpg')}}" alt="icon" class="mt-3">
-                                    <p>We believe financial planning is one of the most important goals for most investors. That's why every Rebit client
+                                    <p>We believe financial planning is one of the most important goals for most investors. That's why every {{$siteName}} client
                                         can get a complimentary financial plan focused on achieving your goals. Quickly write down your goals and send
                                         to our financial team advisors, and in as little as 15 minutes you’ll be able to see the probability of reaching your
                                         financial goals—and what you could do next.</p>

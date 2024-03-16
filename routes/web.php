@@ -48,5 +48,6 @@ Route::get('agriculture',[HomeController::class,'agriculture']);
 Route::get('financialPlanning',[HomeController::class,'financial']);
 Route::get('unqiue',[HomeController::class,'unique']);
 Route::get('testimonials',[HomeController::class,'testimonials']);
+Route::get('energy',[HomeController::class,'energy']);
 
 

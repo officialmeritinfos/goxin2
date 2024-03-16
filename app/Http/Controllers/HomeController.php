@@ -320,5 +320,18 @@ class HomeController extends Controller
 
         return view('home.testimonials',$dataView);
     }
+    public function energy()
+    {
+        $web = GeneralSetting::where('id',1)->first();
+
+        $dataView = [
+            'siteName'  => $web->name,
+            'web'       => $web,
+            'pageName'  => 'Energy Transition',
+            'packages'  => Package::where('status',1)->get()
+        ];
+
+        return view('home.energy',$dataView);
+    }
 }
 

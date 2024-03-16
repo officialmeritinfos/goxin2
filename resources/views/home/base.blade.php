@@ -220,6 +220,7 @@
                         <li><a href="{{route('login')}}">Account</a></li>
                         <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
                         <li><a href="{{url('financialPlanning')}}">Financial Planning</a></li>
+                        <li><a href="{{url('energy')}}">Energy Transition</a></li>
                     </ul>
                 </div>
             </div>
