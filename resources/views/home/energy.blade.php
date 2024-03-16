@@ -184,7 +184,7 @@
             <div class="container mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">ALONE THE Journey</h2>
+                        <h2 class="card-title">ALONG THE Journey</h2>
                         <p>
                             With your data organized and benchmarks in place, you are likely putting together
                             sustainability/ESG reports, disclosing energy use and Scope 1 and 2 GHG
