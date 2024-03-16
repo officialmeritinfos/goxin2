@@ -232,6 +232,7 @@
                         <li><a href="{{url('contact')}}">Contact Us</a></li>
                         <li><a href="{{url('testimonials')}}">Testimonials</a></li>
                         <li><a href="{{url('security')}}">Staying Safe Online</a></li>
+                        <li><a href="{{asset('home/awards.pdf')}}" target="_blank">Platform Review</a></li>
                     </ul>
                 </div>
             </div>
