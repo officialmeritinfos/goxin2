@@ -132,7 +132,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Just Starting</h5>
+                                <h2 class="card-title">Just Starting</h2>
                                 <p class="card-text">Your organization is analyzing its energy data and perhaps have integrated some renewable energy initiatives, but have not set a formal carbon reduction goal yet.</p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Along the Journey</h5>
+                                <h2 class="card-title">Along the Journey</h2>
                                 <p class="card-text">Your organization recognizes it needs to take action on reducing carbon, but you haven't benchmarked your carbon emissions or set any goals yet.</p>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Leading the Way</h5>
+                                <h2 class="card-title">Leading the Way</h2>
                                 <p class="card-text">Your organization has established benchmarks, incorporated renewable energy initiatives and is tracking against formal carbon reduction goals but still has some gaps to fill to reach those goals.</p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
             <div class="container mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">JUST STARTING</h5>
+                        <h2 class="card-title">JUST STARTING</h2>
                         <p>Transitioning to an energy strategy that aims to reduce carbon while still achieving budget objectives and mitigating risk can be a nuanced and complex process. It requires understanding your energy consumption across the entire organization, uncovering opportunities for energy efficiency, and integrating renewables, setting sustainability goals, and monitoring progress.</p>
                     </div>
                 </div>
@@ -184,7 +184,60 @@
             <div class="container mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Leading the Way</h5>
+                        <h2 class="card-title">ALONE THE Journey</h2>
+                        <p>
+                            With your data organized and benchmarks in place, you are likely putting together
+                            sustainability/ESG reports, disclosing energy use and Scope 1 and 2 GHG
+                            emissions and becoming more proactive in incorporating renewables. There are
+                            many avenues to take to offset your carbon footprint, including onsite solar and
+                            wind, virtual power purchase agreements and fleet electrification. All carry a
+                            spectrum of benefits and risks, so it’s important to develop your carbon reduction
+                            goal and understand your organization’s risk appetite and financial requirements.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Measure Baseline</h6>
+                        <p>
+                            First, we need to understand your current energy consumption and carbon
+                            reduction measures already in place to measure and benchmark your carbon
+                            emissions. This will inform your renewable energy roadmap. Our analytics
+                            platform will aggregate all of your energy consumption, carbon emissions, and
+                            forecast net demand into one dashboard.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Optimize & Prioritize</h6>
+                        <p>
+                            Our advanced energy analytics tools will help you optimize your energy usage
+                            and reveal which energy solutions and projects you should focus on to achieve
+                            your financial and sustainability goals. We’ll use the unique and specific data of
+                            your facilities to produce highly customized and actionable recommendations.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Deploy Solutions</h6>
+                        <p>
+                            With a large portfolio of products and solutions, we’re able to partner with
+                            your business to execute all aspects of your sustainability strategy. There’s no
+                            need for you to find, vet, hire and oversee multiple vendors in order to
+                            complete your initiatives.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Leading the Way</h2>
                         <p>
                             Congratulations on establishing a leadership position in sustainability. Now it’s
                             time to solve for the challenging final leg of your journey. Identifying and
@@ -231,7 +284,7 @@
                 </div>
                 <div class="card mt-3">
                     <div class="card-body">
-                        <h6 class="card-title mb-2 text-muted">HIGH LEVEL RECOMMENDATION</h6>
+                        <h4 class="card-title mb-2">HIGH LEVEL RECOMMENDATION</h4>
                         <p>
                             Based on where you are in your decarbonization journey, the following
                             products and solutions are recommended. Should we partner together,
