@@ -64,7 +64,7 @@
                         <div class="text-box1">
                             <h2>{{$service->title}}</h2>
                             <p>
-                                {!! str_replace('MYSITE',$siteName,$service->content) !!}
+                                {!! str_replace(['MYSITE','REGISTER'],[$siteName,route('register')],$service->content) !!}
                             </p>
                         </div>
                     </div>
