@@ -18,6 +18,7 @@
                                         <div class="single-pricing-card">
                                             <div class="pricing-bar">
                                                 <span>{{$package->name}}</span>
+                                                <h2>{{number_format($package->roi*7,2)}}% <sub>/ Weekly</sub></h2>
                                                 <p>{{$package->short}}</p>
                                             </div>
 
