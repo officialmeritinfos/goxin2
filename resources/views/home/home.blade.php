@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="banner-widget-middle">
                                     <div class="banner-widget-content">
-                                        <p><span>40,000+</span> Satisfied Clients</p>
+                                        <p><span>15,000+</span> Satisfied Clients</p>
                                     </div>
                                 </div>
                                 <div class="banner-widget-right">
