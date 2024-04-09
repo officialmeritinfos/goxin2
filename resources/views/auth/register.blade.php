@@ -48,7 +48,7 @@
     <div class="container" >
         <div class="user-form-content" >
             <h3>Register</h3>
-            <p>Register to continue to {{$siteName}}.</p>
+            <p>Register an account.</p>
 
             <form class="user-form" method="post" action="{{route('auth.register')}}" >
                 @include('templates.notification')

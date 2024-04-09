@@ -30,8 +30,6 @@
                                                     <li><i class="ri-check-line"></i>
                                                         Max Deposit: <b class=''>${{number_format($package->maxAmount,2)}}</b></li>
                                                     <li><i class="ri-check-line"></i>
-                                                        Daily Profit: <b class=''>{{number_format($package->roi,2)}}%</b></li>
-                                                    <li><i class="ri-check-line"></i>
                                                         Weekly Profit: <b class=''>{{number_format($package->roi*7,2)}}%</b></li>
                                                     <li><i class="ri-check-line"></i>
                                                         Monthly Profit: <b class=''>{{number_format($package->roi*30,2)}}%</b></li>

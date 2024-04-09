@@ -553,7 +553,7 @@
                             <img src="{{ asset('home/images/icon/icon-3.png') }}" alt="icon">
                         </div>
                         <div class="service-content">
-                            <h3 class="title"><a href="service-details.html">Travel</a></h3>
+                            <h3 class="title"><a >Travel</a></h3>
                             <p>Travel with confidence.
                                 No foreign transaction fees,
                                 unlimited ATM fee rebates for
@@ -570,7 +570,7 @@
                             <img src="{{ asset('home/images/icon/icon-3.png') }}" alt="icon">
                         </div>
                         <div class="service-content">
-                            <h3 class="title"><a href="service-details.html">Travel</a></h3>
+                            <h3 class="title"><a >Zero Fees</a></h3>
                             <p>Ditch the fees.
                                 With no monthly service fees,
                                 overdraft fees, or account

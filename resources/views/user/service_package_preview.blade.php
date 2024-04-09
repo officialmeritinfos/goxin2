@@ -55,7 +55,7 @@
                             <label for="inputAddress2">Account</label>
                             <select type="number" class="form-control form-control-lg" id="inputAddress2"
                                     name="account">
-                                <option value="">Select a Account</option>
+                                <option value="">Select an Account</option>
                                 <option value="1"> New Deposit</option>
                                 <option value="2">Account Balance</option>
                             </select>
