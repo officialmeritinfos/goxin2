@@ -59,7 +59,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8 text-center">
                     <div class="section-header">
-                        <h2 class="section-title">Hear from happy customers</h2>
+                        <h2 class="section-title">INVESTORS REVIEW & TESTIMONIES</h2>
                         <p>
                             Here’s what some of our investors
                             have to say about their experience
