@@ -18,7 +18,6 @@
                                         <div class="single-pricing-card">
                                             <div class="pricing-bar">
                                                 <span>{{$package->name}}</span>
-                                                <h2>$29 <sub>/ Per month</sub></h2>
                                                 <p>{{$package->short}}</p>
                                             </div>
 
