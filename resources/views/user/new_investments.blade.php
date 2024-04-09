@@ -12,7 +12,7 @@
                             <p>
                                 {{$service->short}}
                             </p>
-                            <div class="row">
+                            <div class="row justify-content-center">
                                 @foreach($injected->fetchServicePackage($service->id) as $package)
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-pricing-card">
