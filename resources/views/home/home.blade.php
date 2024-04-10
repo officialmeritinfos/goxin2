@@ -167,26 +167,114 @@
                 <div class="col-xl-6 col-lg-6 mb-30">
                     <div class="experience-content">
                         <h4 class="title">
-                            We are an international financial company engaged in investment activities, which are
-                            related to trading on financial markets and cryptocurrency exchanges performed by qualified professional traders.
+                            We have cultivated the principles of an actual distinguished service, which have earned us a top-level in the realm of investment management. Kinesis Asset offers a Structured, Regulated and Licensed International Financial Management Services creating a wide-range of trusted financial education and success across the globe with a steadfast commitment to integrity, expertise, and partnership, we provide investors with bespoke finance solutions tailored to one’s unique financial objectives.
+                            <br/>
+                            Backed by a legacy of trust and proven performance, Kinesis Asset stands as a beacon of reliability and excellence in the ever-evolving landscape of wealth management.
+                            <br/>
+
+                            You deserve more, we can help. Partner with us, and let us give you a guided approach while you embark on a journey towards enduring prosperity with confidence and peace of mind
                         </h4>
                         <ul class="plan-list">
-                            <li>We are fully Regulated</li>
-                            <li>Multi-award winners</li>
-                            <li>AI-integrated solution</li>
+                            <li>
+                                <strong>Personalized Financial Planning:</strong>
+                                <ul>
+                                    <li>
+                                        Comprehensive assessment of client goals, risk tolerance, and financial
+                                        situation.
+                                    </li>
+                                    <li>
+                                        Customized investment strategies tailored to individual client needs and
+                                        objectives.
+                                    </li>
+                                    <li>
+                                        Regular review and advice to adapt to changing circumstances and
+                                        market conditions.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Transparent Communication:</strong>
+                                <ul>
+                                    <li>
+                                        Guided advice with clients regarding investment decisions and
+                                        performance
+                                    </li>
+                                    <li>
+                                        Timely updates and reports on portfolio performance and market insights
+                                    </li>
+                                    <li>
+                                        Accessibility to dedicated advisors for addressing client concerns and
+                                        inquiries.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Long-Term Relationship Building: </strong>
+                                <ul>
+                                    <li>
+                                        Cultivation of enduring partnerships built on trust, reliability, and mutual
+                                        respect.
+                                    </li>
+                                    <li>
+                                        Continuous engagement with clients to evolve investment strategies and
+                                        adapt to changing needs.
+                                    </li>
+                                    <li>
+                                        Commitment to being a lifelong financial partner on the journey towards
+                                        achieving financial goals.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Fiduciary Responsibility: </strong>
+                                <ul>
+                                    <li>
+                                        Commitment to acting in the best interests of clients at all times
+                                    </li>
+                                    <li>
+                                        Avoidance of conflicts of interest and prioritization of client outcomes
+                                        over company gains.
+                                    </li>
+                                    <li>
+                                        Adherence to Company’s regulations and ethical standards to ensure
+                                        client trust and confidence.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Ongoing Education and Support: </strong>
+                                <ul>
+                                    <li>
+                                        Provision of educational resources and seminars to empower clients with
+                                        financial knowledge.
+                                    </li>
+                                    <li>
+                                        Guidance on long-term wealth management strategies and financial
+                                        planning.
+                                    </li>
+                                    <li>
+                                        Supportive partnership through life events, such as retirement planning,
+                                        inheritance, or major purchases.
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 mb-30">
                     <div class="statistics-item-area">
                         <p>
-                            {{$siteName}} as a private limited liability company have gained popular support and trust from worldwide customers and investors
-                            owing totally to the teams dedication, hard work and sincerity by using our own in-depth knowledge
-                            supported by proven technology and systems already developed to provide our investors and clients
-                            with a simple and efficient way to invest and manage assets, maintain records, have access to
-                            bank term deposits listed on major exchanges and stock markets, provide access to reports and
-                            analysis tools and a high-touch client/customer service team through a team of over 72 of our
-                            own highly trained service staff.
+                            We are confident that your financial goals will meet our strategic investment
+                            solutions. Over the years, we have invested a great deal of capital, resources and
+                            expertise to aid in crafting analyzed portfolio’s strategies to maximize returns and
+                            reduce any possible risk.<br/>
+                            With a track record of delivering consistent investment services and personalized
+                            advisory support, we keep empowering investors to achieve their wealth-building
+                            objectives with an eminent guaranteed satisfaction.<br/>
+                            Whether you're a seasoned investor or new to the financial market, we have a slice of
+                            cake to spices up your experience. Just so, we’ve got you covered with our
+                            qualitatively speculated guide towards the financial investment with a 24/7 active live
+                            support.
                         </p>
                         <div class="row mb-30-none">
                             <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
