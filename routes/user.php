@@ -6,6 +6,7 @@ use App\Http\Controllers\User\Deposits;
 use App\Http\Controllers\User\Investments;
 use App\Http\Controllers\User\Referrals;
 use App\Http\Controllers\User\Settings;
+use App\Http\Controllers\User\Transfers;
 use App\Http\Controllers\User\Withdrawals;
 use App\Models\Withdrawal;
 use Illuminate\Support\Facades\Route;
@@ -96,5 +97,10 @@ Route::get('/investments/chart/{userId}', function ($userId) {
     });
     return response()->json($data);
 })->name('investments.chart');
+
+/*================ TRANSFERS ROUTE ====================*/
+Route::get('transfer',[Transfers::class,'landingPage'])->name('transfer.index');
+Route::get('bonus',[Transfers::class,'bonuses'])->name('transfer.bonus');
+Route::post('transfer/new',[Transfers::class,'newTransfer'])->name('transfer.new');
 
 Route::get('logout',[Login::class,'logout']);

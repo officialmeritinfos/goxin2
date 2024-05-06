@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\Investors;
 use App\Http\Controllers\Admin\Packages;
 use App\Http\Controllers\Admin\PromoController;
 use App\Http\Controllers\Admin\Settings;
+use App\Http\Controllers\Admin\Transfers;
 use App\Http\Controllers\Admin\WebSettings;
 use App\Http\Controllers\Admin\Withdrawals;
 use App\Http\Controllers\Auth\Login;
@@ -112,6 +113,9 @@ Route::get('investors/{id}/login',[Investors::class,'loginUser'])->name('investo
 Route::get('promos',[PromoController::class,'landingPage'])->name('promo.index');
 Route::get('promo/{id}/delete',[PromoController::class,'delete'])->name('promo.delete');
 Route::get('promo/new',[PromoController::class,'newPromo'])->name('promo.new');
+
+/*================ TRANSFER ROUTE ====================*/
+Route::get('transfers',[Transfers::class,'landingPage'])->name('transfers.index');
 
 //Logout
 Route::get('logout',[Login::class,'logout']);

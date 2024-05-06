@@ -76,6 +76,7 @@
                     <a class="collapse-item" href="{{url('admin/packages')}}">Investment Package</a>
                     <a class="collapse-item" href="{{url('admin/investors')}}">Investors</a>
                     <a class="collapse-item" href="{{url('admin/withdrawals')}}">Withdrawals</a>
+                    <a class="collapse-item" href="{{url('admin/transfers')}}">Transfers</a>
                 </div>
             </div>
         </li>

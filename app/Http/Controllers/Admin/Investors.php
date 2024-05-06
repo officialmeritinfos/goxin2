@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Console\Commands\InvestmentReturn;
 use App\Http\Controllers\Controller;
 use App\Jobs\SendInvestmentNotification;
+use App\Models\Bonus;
 use App\Models\GeneralSetting;
 use App\Models\Package;
 use App\Models\User;
@@ -53,12 +54,14 @@ class Investors extends Controller
         $web = GeneralSetting::find(1);
         $user = Auth::user();
 
+        $investor =User::where('id',$id)->first();
         $dataView =[
             'siteName' => $web->name,
             'pageName' => 'Investor Details',
             'user'     =>  $user,
             'web'=>$web,
-            'investor'=>User::where('id',$id)->first()
+            'investor'=>$investor,
+            'bonuses'=>Bonus::where('user',$investor->id)->get()
         ];
 
         return view('admin.investor_detail',$dataView);
@@ -385,6 +388,11 @@ class Investors extends Controller
             'profit'=>$investor->profit+$input['amount']
         ];
 
+        Bonus::create([
+            'user'=>$investor->id,
+            'amount'=>$input['amount']
+        ]);
+
         //send mail to investor
         $userMessage = "
                 Your account has been credit with a bonus of $<b>" . $input['amount'] . "</b>
@@ -392,9 +400,9 @@ class Investors extends Controller
         //SendInvestmentNotification::dispatch($investor, $userMessage, 'Withdrawal Approved');
         $investor->notify(new InvestmentMail($investor, $userMessage, 'Credit Notification - Bonus'));
 
-        $update = User::where('id',$input['id'])->update($data);
+         User::where('id',$input['id'])->update($data);
 
-        return back()->with('success','Debt added');
+        return back()->with('success','Bonus added');
     }
 
     public function subLoan(Request $request)
@@ -421,7 +429,7 @@ class Investors extends Controller
         if ($update){
 
         }
-        return back()->with('success','Debt subtracted');
+        return back()->with('success','Bonus subtracted');
     }
 
      public function loginUser($id)

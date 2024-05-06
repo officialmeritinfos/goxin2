@@ -103,6 +103,20 @@
             </li>
 
             <li>
+                <a href="{{route('transfer.index')}}" class="box-style">
+                    <i class="bx bx-send"></i>
+                    <span class="menu-title">Transfer Funds </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{route('transfer.bonus')}}" class="box-style">
+                    <i class="bx bx-package"></i>
+                    <span class="menu-title">Bonus </span>
+                </a>
+            </li>
+
+            <li>
                 <a href="{{url('account/referral')}}" class="box-style">
                     <i class="bx bx-user-plus"></i>
                     <span class="menu-title">Referrals </span>
